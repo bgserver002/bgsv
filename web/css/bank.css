@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+#app .regist_wrap .regist_container section {padding-top: 60px; padding-bottom: 80px;}
+#app .regist_wrap .regist_container .init_section h1 {margin-bottom: 20px;}
+#app .regist_wrap .regist_container .init_section ul {list-style: auto;}
+#app .regist_wrap .btn_wrap {z-index: 11;}
+#app .regist_wrap .btn_wrap button.btn.left {width: 45%; float: left; background-color: #737c95;}
+#app .regist_wrap .btn_wrap button.btn.right {width: 45%; float: right;}
+#app .regist_wrap .btn_wrap button.btn.left:hover {background-color: #687087;}
+
+.setting_section .input_area {padding-top: 20px;}
+.setting_section .input_area .input_box:nth-child(2n), .setting_section .input_area .input_box:nth-child(3n), .setting_section .input_area .input_box:nth-child(4n) {margin-top:20px;}
+.setting_section .input_area input {padding: 15px; border: 1px solid #ddd; margin-top:5px;}
+.setting_section .input_area input:focus {border-color: #1c4468;}
+
+.finish_section .finish_area {padding-top: 20px;}
+.finish_section .finish_area .txt {margin-top: 10px;}
+.finish_section .finish_area span {float: right;}

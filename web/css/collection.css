@@ -1,0 +1,55 @@
+@charset "UTF-8";
+*, :after, :before {-webkit-box-sizing: border-box; box-sizing: border-box;}
+body {background-color: #1d2437!important;}
+body, html {height: 100%!important;}
+body, html {-webkit-overflow-scrolling: touch!important;}
+body, button, dd, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, html, input, legend, li, ol, p, table, td, textarea, th, ul {font-family: NotoSans,-apple-system,BlinkMacSystemFont,"\B9D1\C740 \ACE0\B515",Malgun Gothic,Dotum,"\B3CB\C6C0",Microsoft NeoGothic,Roboto,Helvetica,Droid sans,Arial,sans-serif; margin: 0; padding: 0;}
+body, button, dd, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, input, legend, li, ol, p, table, td, textarea, th, ul {-webkit-text-size-adjust: none;}
+em, h1, h2, h3, h4, h5, h6, p {font-weight: 400; word-wrap: break-word; word-break: keep-all;}
+button {border: 0; background-color: transparent; cursor: pointer;}
+button, button:focus {outline: none;}
+button>span, button img {position: relative;}
+
+#app, .container, .wrap {height: 100%;}
+header {position: fixed; top: 0; left: 0; right: 0; z-index: 10000; height: 48px; line-height: 48px; background-color: #1f3263;}
+header h1 {font-size: 15px; font-weight: 700; color: #fff; padding-left: 20px;}
+header h1 i {width: 20px; height: 20px; display: inline-block; background-image: url(https://cdn.jsdelivr.net/gh/cckiss/web/img/collection_book.png); background-size: cover; background-repeat: no-repeat; background-position: center center; vertical-align: text-bottom; margin-right: 5px;}
+header h1 span {font-size: 12px; margin-left: 10px; color: #46b6d9; border: 1px solid; padding: 2px 5px; vertical-align: top;}
+header button {position: absolute; right: 10px; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); background: none; border: 0;}
+header button, header button>span {display: block; font-size: 0; width: 30px; height: 30px;}
+header button.btn_close>span:after, header button.btn_close>span:before {content: ""; width: 1px; height: 17px; background-color: #fff; position: absolute; left: 50%; top: 7px;}
+header button.btn_close>span:before {-webkit-transform: rotate(-45deg); transform: rotate(-45deg);}
+header button.btn_close>span:after {-webkit-transform: rotate(45deg); transform: rotate(45deg);}
+header button.btn_reload {right: 40px;}
+header button.btn_reload>span:before {content: ""; width: 17px; height: 17px; position: absolute; left: 24%; top: 7px; background-image: url(https://cdn.jsdelivr.net/gh/cckiss/web/img/schedule/icon-reload.png); background-size: 12px 12px; background-position: center center; background-repeat: no-repeat;}
+
+.ui-slidetab {position: relative; height: 51px; background-color: #f4f5f7; overflow: hidden; border: 1px solid #1f3263; font-size: 16px;}
+.ui-slidetab .handle {position: absolute; top: 0; left: 0; width: 100%;}
+.ui-slidetab .btns {position: relative; margin: 0; padding: 0; white-space: nowrap; display: flex; list-style: none;}
+.ui-slidetab.percentage .btns, .ui-slidetab.percentage .handle {width: 100%;}
+.ui-slidetab .btns li {vertical-align: top; border-left: 1px solid #1f3263;}
+.ui-slidetab .btns li:first-child {border-left: none;}
+.ui-slidetab .btns li:last-child {border-right: none;}
+.ui-slidetab .btns li a {display: block; margin: 0; height: 50px; line-height: 52px; color: #1f3263; text-align: center; text-decoration: none; min-width: 65px; font-weight: 600;}
+.ui-slidetab .btns li a.on {color: #fff; background-color: #415483;}
+
+#Container {padding-top: 98px; height: 100%;}
+#Container .collection_wrap {height: 100%;}
+#Container .collection_wrap .redar_container #collection_list {list-style: none;}
+#Container .collection_wrap .redar_container .collection_section {padding-bottom: 5px;}
+#Container .collection_wrap .redar_container .collection_section .top {height: 50px; padding: 0 15px; background-color: #1f3263; color: #fff;}
+#Container .collection_wrap .redar_container .collection_section .top .section_desc {float: left; line-height: 50px; color: #ddd; font-size: 14px; font-weight: 600;}
+#Container .collection_wrap .redar_container .collection_section .top .section_desc .section_complete {margin-left: 10px; border: 1px solid; padding: 0px 4px; color: #46b6d9;}
+#Container .collection_wrap .redar_container .collection_section .top .bonus_desc {float: right; height: 100%; display: inline-block;}
+#Container .collection_wrap .redar_container .collection_section .top .bonus_desc ul {list-style: none; color: yellow; font-size: 12px; height: 50px; padding-top: 7px;}
+#Container .collection_wrap .redar_container .collection_section .top .bonus_desc ul li {line-height: 19px;}
+#Container .collection_wrap .redar_container .collection_section .slot_list {height: 80px; background-color: #1d2437; margin: 5px 0px 0px 5px;}
+#Container .collection_wrap .redar_container .collection_section.up .slot_list {display:none;}
+#Container .collection_wrap .redar_container .collection_section .slot_list ul {list-style: none;}
+#Container .collection_wrap .redar_container .collection_section .slot_list ul li:last-child {margin-right: 0px;}
+#Container .collection_wrap .redar_container .collection_section .slot_list ul .slot {float: left; height: 80px; width: 80px; border: 2px solid #cbb33c; margin-right: 5px; background-size: 80%; background-repeat: no-repeat; background-position: center center; width: 80px; height: 80px; position: relative;}
+#Container .collection_wrap .redar_container .collection_section .slot_list ul .slot .status {width: 100%; height: 100%; position: relative; background: #0000007a; z-index: 1;}
+#Container .collection_wrap .redar_container .collection_section .slot_list ul .slot .status button {width: 35px; height: 35px; border: 1px solid; color: #02ff00; border-radius: 50%; font-size: 10px; position: absolute; left: 29%; top: 26%;}
+#Container .collection_wrap .redar_container .collection_section .slot_list ul .slot .slot_desc {font-size: 10px; font-weight: 500; color: #fff; position: absolute; top: 34%; width: 100%; text-align: center;}
+#Container .collection_wrap .redar_container .collection_section .slot_list ul .slot .slot_desc .blessed {color: yellow;}
+#Container .collection_wrap .redar_container .collection_section .slot_list ul .slot .slot_desc .cursed {color: red;}
