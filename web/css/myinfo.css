@@ -8,7 +8,7 @@ section#content .wrap_contents {padding-top:20px !important;}
 
 header.tabmenu {max-width:800px;height:40px;background:#eff1f2;}
 header.tabmenu ul {float:left;}
-header.tabmenu ul li {float:left;padding:10px 0;background:url("https://cdn.jsdelivr.net/gh/cckiss/web/img/custom/bg_col.gif") no-repeat left 50%;}
+header.tabmenu ul li {float:left;padding:10px 0;background:url("https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/img/custom/bg_col.gif") no-repeat left 50%;}
 header.tabmenu ul li:first-child {background:none;}
 header.tabmenu ul li a {display:block;height:20px;padding:0 30px;font-size:15px;color:#6e7482;text-decoration:none;}
 header.tabmenu ul li.on {background:#6e7482 none;}
@@ -104,4 +104,4 @@ table.table_list tr.current td {font-weight:bold; letter-spacing:-1px;}
 
 .view_subject {padding:20px 20px; border-top:2px solid #6e7482;border-bottom:1px solid #6e7482; margin-top:10px;}
 .view_subject p {display:inline-block; max-width:650px; vertical-align:middle; font-weight:bold;font-size:16px;font-family:dotum,돋움,AppleGothic;word-break:break-all;word-wrap:break-word;}
-.view_subject .btn_delete {display:inline-block; float: right; width:89px; height:29px; margin-left:10px; vertical-align:middle; background:url('https://cdn.jsdelivr.net/gh/cckiss/web/img/custom/btn_delete.gif') no-repeat left top; text-indent:-10000em;}
+.view_subject .btn_delete {display:inline-block; float: right; width:89px; height:29px; margin-left:10px; vertical-align:middle; background:url('https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/img/custom/btn_delete.gif') no-repeat left top; text-indent:-10000em;}

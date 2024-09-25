@@ -3,8 +3,8 @@
 .page-my .ui-slidetab .btns li, .page-search .ui-slidetab .btns li, .wrap-returnbrave-recommend-content3 .section-returnbrave-recommend-stats header, .wrap-returnbrave-recommend-content3 section header, .wrap-section-beginner .table-bundle {position: relative;}
 .admin_btn {float: right; background: #c69c7c; border-radius: 20px; padding: 7px; width: 100px; color: #fff;}
 .admin_btn:hover {background: #aa8060;}
-.wrap-section-beginner {position: relative; letter-spacing: -1px; background-image: url(https://cdn.jsdelivr.net/gh/cckiss/web/img/guide/sectionbg.jpg); background-size: 1651.6129px 645.16129px; background-position: center 100px; background-repeat: repeat-x;}
-.wrap-section-beginner.class-0::before {content: ''; display: block; width: 100%; height: 270px; position: absolute; top: 155px; left: 0; background-image: url(https://cdn.jsdelivr.net/gh/cckiss/web/img/guide/m-class-0.png); background-size: 610px 270px; background-position: center center; background-repeat: no-repeat;}
+.wrap-section-beginner {position: relative; letter-spacing: -1px; background-image: url(https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/img/guide/sectionbg.jpg); background-size: 1651.6129px 645.16129px; background-position: center 100px; background-repeat: repeat-x;}
+.wrap-section-beginner.class-0::before {content: ''; display: block; width: 100%; height: 270px; position: absolute; top: 155px; left: 0; background-image: url(https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/img/guide/m-class-0.png); background-size: 610px 270px; background-position: center center; background-repeat: no-repeat;}
 .wrap-section-beginner .quickmenu {position: fixed; right: 0; top: 120px; width: 130px; height: 143px; padding: 16px; border-radius: 8px 0 0 8px; border: 2px solid #c38b61; border-width: 2px 0 2px 2px; background-color: #fff; font-size: 14px;z-index: 100;}
 .wrap-section-beginner .quickmenu.off {right: -130px;}
 .wrap-section-beginner .quickmenu .button-toggle {position: absolute; right: 130px; top: 43px; width: 40px; height: 54px; border-radius: 27px 0 0 27px; background-color: #c38b61; border: 0;}
@@ -17,7 +17,7 @@
 .wrap-section-beginner section {padding-bottom: 40px;}
 .wrap-section-beginner section>header {padding: 30px 18px 19px;}
 .wrap-section-beginner section>header h2 {display: inline-block;font-size: 18px;}
-.wrap-section-beginner section>header .icon-helper {position: relative; display: inline-block; width: 22px; height: 22px; border-radius: 50%; vertical-align: middle; margin-top: -3px; margin-left: 4px; background-color: #aa8060; background-image: url(https://cdn.jsdelivr.net/gh/cckiss/web/img/guide/icon-i.png); background-size: 22px 22px; background-position: center center;background-repeat: no-repeat; cursor: pointer;}
+.wrap-section-beginner section>header .icon-helper {position: relative; display: inline-block; width: 22px; height: 22px; border-radius: 50%; vertical-align: middle; margin-top: -3px; margin-left: 4px; background-color: #aa8060; background-image: url(https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/img/guide/icon-i.png); background-size: 22px 22px; background-position: center center;background-repeat: no-repeat; cursor: pointer;}
 .wrap-section-beginner section>header .icon-helper.on::before {position: absolute; left: 4px; top: 36px; content: ''; display: inline-block; width: 12px; height: 12px; border: solid #d0beb1; border-width: 0 2px 2px 0; -webkit-transform: rotate(-135deg); -ms-transform: rotate(-135deg); transform: rotate(-135deg); background-color: #fff; z-index: 2;}
 .wrap-section-beginner section.section-top>header {text-align: center; padding-top: 0; height: 270px;}
 .wrap-section-beginner section p {line-height: 1.4;}
@@ -128,7 +128,7 @@
 .wrap-section-beginner .section-hunt .table-bundle .table-bundle-row .table .zone {height: 60px;}
 .wrap-section-beginner .section-magic>article, .wrap-section-beginner .section-recommend>article, .wrap-section-beginner section>footer {padding-left: 18px; padding-right: 18px;}
 .wrap-section-hunt .section-hunt footer {padding-top: 12px;}
-.wrap-section-boss {background-color: #000;background-image: url(https://cdn.jsdelivr.net/gh/cckiss/web/img/guide/boss-bg-m.jpg); background-size: 960px 400px; background-position: center top;background-repeat: no-repeat;}
+.wrap-section-boss {background-color: #000;background-image: url(https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/img/guide/boss-bg-m.jpg); background-size: 960px 400px; background-position: center top;background-repeat: no-repeat;}
 .wrap-section-boss .section-boss .article-tab, .wrap-section-service .pcbang .subtext {padding-bottom: 20px;}
 .wrap-section-boss .section-boss .article-tab .tab {width: 100%; height: 60px; margin-bottom: 20px;}
 .wrap-section-boss .section-boss .article-tab .tab .tab-item {position: relative; float: left; width: 7.69231%; height: 60px; text-align: center; border-left-width: 0;}
@@ -160,8 +160,8 @@
 .article-boss .table-bundle-row .table.on {display:block;}
 .wrap-section-beginner .section-boss .table-bundle .table-bundle-row::-webkit-scrollbar {width: 5.2px;}
 .wrap-section-beginner .section-boss .table-bundle .table-bundle-row::-webkit-scrollbar-thumb {background-color:#3d4147;}
-.wrap-section-beginner .section-boss .table-bundle .table-bundle-row::-webkit-scrollbar-button:start:decrement {display:block; width: 15px; background:url('https://cdn.jsdelivr.net/gh/cckiss/web/img/guide/scrollbar_v2.png') 0px -15px; }
-.wrap-section-beginner .section-boss .table-bundle .table-bundle-row::-webkit-scrollbar-button:end:increment {display:block; width: 15px; background:url('https://cdn.jsdelivr.net/gh/cckiss/web/img/guide/scrollbar_v2.png') -15px -15px; }
+.wrap-section-beginner .section-boss .table-bundle .table-bundle-row::-webkit-scrollbar-button:start:decrement {display:block; width: 15px; background:url('https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/img/guide/scrollbar_v2.png') 0px -15px; }
+.wrap-section-beginner .section-boss .table-bundle .table-bundle-row::-webkit-scrollbar-button:end:increment {display:block; width: 15px; background:url('https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/img/guide/scrollbar_v2.png') -15px -15px; }
 .wrap-section-beginner .section-boss .table-bundle .table-bundle-row::-webkit-scrollbar-track {scrollbar-track-color: #27292c;scrollbar-face-color: #3d4147;scrollbar-shadow-color: #3d4147;}
 
 .article-boss-time .table-bundle-row .table.on {display: block;}
@@ -180,8 +180,8 @@
 .wrap-section-beginner .section-boss-time .table-bundle .table-bundle-row .table .percent {height: 108px;}
 .wrap-section-beginner .section-boss-time .table-bundle .table-bundle-row::-webkit-scrollbar {width: 5.2px;}
 .wrap-section-beginner .section-boss-time .table-bundle .table-bundle-row::-webkit-scrollbar-thumb {background-color:#3d4147;}
-.wrap-section-beginner .section-boss-time .table-bundle .table-bundle-row::-webkit-scrollbar-button:start:decrement {display:block; width: 15px; background:url('https://cdn.jsdelivr.net/gh/cckiss/web/img/guide/scrollbar_v2.png') 0px -15px; }
-.wrap-section-beginner .section-boss-time .table-bundle .table-bundle-row::-webkit-scrollbar-button:end:increment {display:block; width: 15px; background:url('https://cdn.jsdelivr.net/gh/cckiss/web/img/guide/scrollbar_v2.png') -15px -15px; }
+.wrap-section-beginner .section-boss-time .table-bundle .table-bundle-row::-webkit-scrollbar-button:start:decrement {display:block; width: 15px; background:url('https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/img/guide/scrollbar_v2.png') 0px -15px; }
+.wrap-section-beginner .section-boss-time .table-bundle .table-bundle-row::-webkit-scrollbar-button:end:increment {display:block; width: 15px; background:url('https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/img/guide/scrollbar_v2.png') -15px -15px; }
 .wrap-section-beginner .section-boss-time .table-bundle .table-bundle-row::-webkit-scrollbar-track {scrollbar-track-color: #27292c;scrollbar-face-color: #3d4147;scrollbar-shadow-color: #3d4147;}
 
 .wrap-section-hunt .section-hunt .wrap-button-bundle {border-top: 1px solid #e6e6e6; margin-top: 30px;}
@@ -217,7 +217,7 @@
 
 @media (min-width: 960px){
 	.wrap-section-beginner {background-size: 2560px 1000px!important; background-position: center 0!important; margin-top: -55px;}
-	.wrap-section-beginner.class-0::before {height: 1000px; position: absolute; top: 0; background-image: url(https://cdn.jsdelivr.net/gh/cckiss/web/img/guide/pc-class-0.png); background-size: 1920px 1000px; background-position: center center; background-repeat: no-repeat;}
+	.wrap-section-beginner.class-0::before {height: 1000px; position: absolute; top: 0; background-image: url(https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/img/guide/pc-class-0.png); background-size: 1920px 1000px; background-position: center center; background-repeat: no-repeat;}
 	.wrap-section-beginner .quickmenu {top: 230px;}
 	.wrap-section-beginner .quickmenu .button-toggle {top: 43px;}
 	.wrap-section-beginner .wrap-section-top {height: 520px;}
@@ -241,7 +241,7 @@
 	.wrap-section-beginner .table.table-size-10, .wrap-section-beginner .table.table-size-11, .wrap-section-beginner .table.table-size-12, .wrap-section-beginner .table.table-size-13, .wrap-section-beginner .table.table-size-14, .wrap-section-beginner .table.table-size-15, .wrap-section-beginner .table.table-size-6, .wrap-section-beginner .table.table-size-7, .wrap-section-beginner .table.table-size-8, .wrap-section-beginner .table.table-size-9 {margin-right: 20px;}
 	.wrap-section-beginner .table.table-size-10 td, .wrap-section-beginner .table.table-size-10 th, .wrap-section-beginner .table.table-size-11 td, .wrap-section-beginner .table.table-size-11 th, .wrap-section-beginner .table.table-size-12 td, .wrap-section-beginner .table.table-size-12 th, .wrap-section-beginner .table.table-size-13 td, .wrap-section-beginner .table.table-size-13 th, .wrap-section-beginner .table.table-size-14 td, .wrap-section-beginner .table.table-size-14 th, .wrap-section-beginner .table.table-size-15 td, .wrap-section-beginner .table.table-size-15 th, .wrap-section-beginner .table.table-size-6 td, .wrap-section-beginner .table.table-size-6 th, .wrap-section-beginner .table.table-size-7 td, .wrap-section-beginner .table.table-size-7 th, .wrap-section-beginner .table.table-size-8 td, .wrap-section-beginner .table.table-size-8 th, .wrap-section-beginner .table.table-size-9 td, .wrap-section-beginner .table.table-size-9 th {width: 190px;}
 	.wrap-section-beginner .table.table-size-10 .thead, .wrap-section-beginner .table.table-size-11 .thead, .wrap-section-beginner .table.table-size-12 .thead, .wrap-section-beginner .table.table-size-13 .thead, .wrap-section-beginner .table.table-size-14 .thead, .wrap-section-beginner .table.table-size-15 .thead, .wrap-section-beginner .table.table-size-6 .thead, .wrap-section-beginner .table.table-size-7 .thead, .wrap-section-beginner .table.table-size-8 .thead, .wrap-section-beginner .table.table-size-9 .thead {width: 116px;}
-	.wrap-section-boss {background-image: url(https://cdn.jsdelivr.net/gh/cckiss/web/img/guide/boss-bg.jpg);background-size: 2560px 700px;background-position: center top;background-repeat: no-repeat;}
+	.wrap-section-boss {background-image: url(https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/img/guide/boss-bg.jpg);background-size: 2560px 700px;background-position: center top;background-repeat: no-repeat;}
 	.wrap-section-boss .section-boss>article .article-tab .tab .tab-item {display: table;height: 48px;}
 	.wrap-section-boss .section-boss>article .article-tab .tab .tab-item a {display: table-cell;padding: 0 4px;}
 	.wrap-section-boss .section-boss>article .article-tab .tab .tab-item.on::after, .wrap-section-boss .section-boss>article .article-tab .tab .tab-item.slick-current::after {bottom: -10px;}

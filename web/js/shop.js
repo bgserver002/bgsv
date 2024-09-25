@@ -108,7 +108,7 @@ class Shop {
 							`<div class="item-name">` +
 	   							`<div class="server">${serverName}</div>` +
 	   							`<a href="/my/item-search/view?itemId=${encodeURIComponent(item.name)}&enchant=${item.enchant}">` +
-	   								`<div class="thumbnail"><img src="/img/item/${item.gfxId}.png" onerror="this.onerror=null; this.src='https://cdn.jsdelivr.net/gh/cckiss/web/img/shop/noimg.gif' class="thumb" alt="${item.name}"></div>` +
+	   								`<div class="thumbnail"><img src="/img/item/${item.gfxId}.png" onerror="this.onerror=null; this.src='https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/img/shop/noimg.gif' class="thumb" alt="${item.name}"></div>` +
 	   								`<h2 class="name">${item.enchant > 0 ? `+${item.enchant} ` : ``}${item.name}</h2>` +
 	   							`</a>` +
 	   						`</div>` +
@@ -210,7 +210,7 @@ class Shop {
 					}], (data) => {
 						if (data) {
 							$('.search-util__result .count').text(data.length);
-							$('.thumbnail').html(`<img src="/img/item/${data.gfxId}.png" onerror="this.src='https://cdn.jsdelivr.net/gh/cckiss/web/img/shop/noimg.gif'" class="thumb" alt="">`);
+							$('.thumbnail').html(`<img src="/img/item/${data.gfxId}.png" onerror="this.src='https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/img/shop/noimg.gif'" class="thumb" alt="">`);
 							let itemList = [];
 							let price_now = $('.price > .price-now');
 							if (TRADE_TYPE === 'SELL') {

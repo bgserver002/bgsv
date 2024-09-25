@@ -240,7 +240,7 @@ function searchRealtimeKeyword(option) {
 		return;
 	}
 	includeJS('/js/popularkeyword.js', getTime, () => {
-		includeJS('https://cdn.jsdelivr.net/gh/cckiss/web/js/tram.min.js', cacheVersion, () => {
+		includeJS('https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/js/tram.min.js', cacheVersion, () => {
 			new RealtimeKeyword($.extend(option, { data : popularKeyword }));
 		});
 	});

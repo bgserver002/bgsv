@@ -13,7 +13,7 @@ button>span, button img {position: relative;}
 #app, .container, .wrap {height: 100%;}
 header {position: fixed; top: 0; left: 0; right: 0; z-index: 10000; height: 48px; line-height: 48px; background-color: #1f3263;}
 header h1 {font-size: 15px; font-weight: 700; color: #fff; padding-left: 20px;}
-header h1 i {width: 20px; height: 20px; display: inline-block; background-image: url(https://cdn.jsdelivr.net/gh/cckiss/web/img/collection_book.png); background-size: cover; background-repeat: no-repeat; background-position: center center; vertical-align: text-bottom; margin-right: 5px;}
+header h1 i {width: 20px; height: 20px; display: inline-block; background-image: url(https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/img/collection_book.png); background-size: cover; background-repeat: no-repeat; background-position: center center; vertical-align: text-bottom; margin-right: 5px;}
 header h1 span {font-size: 12px; margin-left: 10px; color: #46b6d9; border: 1px solid; padding: 2px 5px; vertical-align: top;}
 header button {position: absolute; right: 10px; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); background: none; border: 0;}
 header button, header button>span {display: block; font-size: 0; width: 30px; height: 30px;}
@@ -21,7 +21,7 @@ header button.btn_close>span:after, header button.btn_close>span:before {content
 header button.btn_close>span:before {-webkit-transform: rotate(-45deg); transform: rotate(-45deg);}
 header button.btn_close>span:after {-webkit-transform: rotate(45deg); transform: rotate(45deg);}
 header button.btn_reload {right: 40px;}
-header button.btn_reload>span:before {content: ""; width: 17px; height: 17px; position: absolute; left: 24%; top: 7px; background-image: url(https://cdn.jsdelivr.net/gh/cckiss/web/img/schedule/icon-reload.png); background-size: 12px 12px; background-position: center center; background-repeat: no-repeat;}
+header button.btn_reload>span:before {content: ""; width: 17px; height: 17px; position: absolute; left: 24%; top: 7px; background-image: url(https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/img/schedule/icon-reload.png); background-size: 12px 12px; background-position: center center; background-repeat: no-repeat;}
 
 .ui-slidetab {position: relative; height: 51px; background-color: #f4f5f7; overflow: hidden; border: 1px solid #1f3263; font-size: 16px;}
 .ui-slidetab .handle {position: absolute; top: 0; left: 0; width: 100%;}

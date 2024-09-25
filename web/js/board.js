@@ -5,7 +5,7 @@
  */
 
 $(function() {
-	includeHTML(document.querySelector('#svg-container'), 'https://cdn.jsdelivr.net/gh/cckiss/web/svg.html', cacheVersion);
+	includeHTML(document.querySelector('#svg-container'), 'https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/svg.html', cacheVersion);
 	var dropdown			= $('.ui-dropdown'),
 		dropdownSelect		= $('.ui-dropdown-custom_items'),
 		resetTextBtn		= $('.co-btn-reset'),
@@ -288,7 +288,7 @@ function boardCommentWrite(){
 			var commentHtml = 
 			`<div class="comment-article" data-commentid="${data.id}">` +
 				`<div class="comment-info">` +
-					`<span class="thumb"><img src="https://cdn.jsdelivr.net/gh/cckiss/web${data.profileUrl}" alt=""></span>` +
+					`<span class="thumb"><img src="https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web${data.profileUrl}" alt=""></span>` +
 					`<span class="writer">${data.name}<span class="server">${serverName}</span></span>` +
 					`<span class="date">${moment(new Date(data.date)).format('YYYY. MM. DD. HH:mm:ss')}</span>` +
 					`<button class="co-btn btn-declare" data-commentid="${data.id}" data-boardnum="${boardRownum}" data-name="${data.name}" aria-label="신고" onClick="commentReportBtn(this);">&nbsp;신고</button>` +
@@ -393,7 +393,7 @@ function createBoardHtml(element){
 	}
 
 	const board_uri_flag = get_board_uri_flag();
-	const writer_tag = `<span class="writer">${element.type ? `<img src="https://cdn.jsdelivr.net/gh/cckiss/web/img/lineage_writer.png" alt="">` : `${element.name}<span class="server">${serverName}</span>`}</span>&nbsp`;
+	const writer_tag = `<span class="writer">${element.type ? `<img src="https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/img/lineage_writer.png" alt="">` : `${element.name}<span class="server">${serverName}</span>`}</span>&nbsp`;
 	const date_tag = `<span class="date">${moment(new Date(element.date)).format('YY.MM.DD.')}</span>&nbsp`;
 	const now_moment = moment().format('YYYYMMDD');
 	const item_moment = moment(new Date(element.date)).format('YYYYMMDD');

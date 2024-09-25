@@ -31,7 +31,7 @@ class ToastLayer {
 		this.el.setAttribute('class', 'nc-banner');
 		this.el.setAttribute('data-type', 'toast');
 		this.el.innerHTML = 
-			`<a href="${_data.HREF}" class="nc-banner-link" style="background-image:url('https://cdn.jsdelivr.net/gh/cckiss/web${_data.SRC}')">` +
+			`<a href="${_data.HREF}" class="nc-banner-link" style="background-image:url('https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web${_data.SRC}')">` +
 				`<div class="nc-banner-inner">` +
 					`<div class="nc-banner-tag">${_data.TAG}</div><strong class="nc-banner-title-main">${_data.TITLE}</strong><em class="nc-banner-title-sub">${_data.TITLE_SUB}</em>` +
 				`</div>` +

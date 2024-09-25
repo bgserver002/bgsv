@@ -6,12 +6,12 @@
 #custmContainer {display: block; padding-top: 35px;}
 .custom_comment {border-top: 1px solid #6e7482;padding: 10px;display: flow-root;}
 .custom_comment textarea {width: 100%; height: 100px; padding: 5px 10px; border: 1px solid #d6e0ed; background-color: #eff3f8;}
-.custom_comment .btn_typeA_gray {display: inline-block; zoom: 1; *display: inline; vertical-align: middle; background: url(https://cdn.jsdelivr.net/gh/cckiss/web/img/custom/bg_button.png) no-repeat left top; height: 35px; padding: 0 0 0 17px; background-position: left -42px; cursor: pointer; margin-top: 10px;float: right;}
-.custom_comment .btn_typeA_gray span.btn {display: inline-block; zoom: 1; *display: inline; color: #FFF; font-family: dotum,돋움,AppleGothic; cursor: pointer; letter-spacing: -0.1em; background: url(https://cdn.jsdelivr.net/gh/cckiss/web/img/custom/bg_button.png) no-repeat right top; height: 26px; padding: 9px 15px 0 0; font-weight: bold; font-size: 14px; background-position: right -42px;}
+.custom_comment .btn_typeA_gray {display: inline-block; zoom: 1; *display: inline; vertical-align: middle; background: url(https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/img/custom/bg_button.png) no-repeat left top; height: 35px; padding: 0 0 0 17px; background-position: left -42px; cursor: pointer; margin-top: 10px;float: right;}
+.custom_comment .btn_typeA_gray span.btn {display: inline-block; zoom: 1; *display: inline; color: #FFF; font-family: dotum,돋움,AppleGothic; cursor: pointer; letter-spacing: -0.1em; background: url(https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/img/custom/bg_button.png) no-repeat right top; height: 26px; padding: 9px 15px 0 0; font-weight: bold; font-size: 14px; background-position: right -42px;}
 .normalFrontIcon {color: #3c3c3b; font-family: 'Gotham A','Gotham B'; font-weight: 600;}
 .normalContent {padding: 15px 70px 0px 0px; color: #8a8a8a; line-height: 25px; white-space: pre-line; margin-bottom: 10px;}
-.arrowQ {float: right; background: url(https://cdn.jsdelivr.net/gh/cckiss/web/img/custom/arrowQoff.gif) right no-repeat; width: 10px; height: 10px; margin-right: 20px;}
-.arrowQ.selected {background: url(https://cdn.jsdelivr.net/gh/cckiss/web/img/custom/arrowQon.gif) right no-repeat;}
+.arrowQ {float: right; background: url(https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/img/custom/arrowQoff.gif) right no-repeat; width: 10px; height: 10px; margin-right: 20px;}
+.arrowQ.selected {background: url(https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/img/custom/arrowQon.gif) right no-repeat;}
 .detailFaq {display:none;}
 .detailFaq .btns a, .detailFaq .btns button {width: 80px; display: inline-block; background: #8e8e8e; text-align: center; padding: 7px; margin-right: 5px; color: #fff;}
 .detailFaq .btns a:last-child, .detailFaq .btns button:last-child {background: #4d84cc;}

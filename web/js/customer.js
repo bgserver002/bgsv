@@ -4,7 +4,7 @@
  * 고객센터
  */
 
-includeHTML(document.querySelector('#svg-container'), 'https://cdn.jsdelivr.net/gh/cckiss/web/svg.html', cacheVersion);
+includeHTML(document.querySelector('#svg-container'), 'https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/svg.html', cacheVersion);
 $('#tab_' + pageCnbSubType).addClass('on');
 const is_gm = account && account.gm;
 const account_name = account ? account.name : '';

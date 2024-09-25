@@ -5,7 +5,7 @@
  */
 
 $(function() {
-	includeHTML(document.querySelector('#svg-container'), 'https://cdn.jsdelivr.net/gh/cckiss/web/svg.html', cacheVersion);
+	includeHTML(document.querySelector('#svg-container'), 'https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/svg.html', cacheVersion);
 	
 	var dropdown			= $('.ui-dropdown'),
 		dropdownSelect		= $('.ui-dropdown-custom_items'),
@@ -176,7 +176,7 @@ function createNoticeHtml(element){
 	}	
 	
 	const category_tag = `<span class="category">${notice_flag}&nbsp</span>`;
-	const writer_tag = `<span class="writer"><img src="https://cdn.jsdelivr.net/gh/cckiss/web/img/lineage_writer.png" alt=""></span>&nbsp`;
+	const writer_tag = `<span class="writer"><img src="https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/img/lineage_writer.png" alt=""></span>&nbsp`;
 	const date_tag = `<span class="date">${moment(new Date(element.date)).format('YY.MM.DD.')}</span>&nbsp`;
 	const now_moment = moment().format('YYYYMMDD');
 	const item_moment = moment(new Date(element.date)).format('YYYYMMDD');

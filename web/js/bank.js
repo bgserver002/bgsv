@@ -23,7 +23,7 @@ class Bank {
 	init() {
 		const _ = this;
 
-		includeHTML(document.querySelector('#svg-container'), 'https://cdn.jsdelivr.net/gh/cckiss/web/svg.html', cacheVersion);
+		includeHTML(document.querySelector('#svg-container'), 'https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/svg.html', cacheVersion);
 
 		_.param = {
 			bank_name : undefined,

@@ -115,7 +115,7 @@ class Mypage {
 					let tpl = ``;
 	           				if (data.length) {
 						tpl = data.map( (item, i) => {
-							return `<li><img src="/img/item/${item.item.invgfx}.png" alt="" onerror="this.src='https://cdn.jsdelivr.net/gh/cckiss/web/img/shop/noimg.gif'" class="thumb"><strong class="name${getBlessStatus(item.bless)}">${getItemName(item.item.name, item.enchant, item.attr)} (${commaAdd(item.count)})</strong></li>`;
+							return `<li><img src="/img/item/${item.item.invgfx}.png" alt="" onerror="this.src='https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/img/shop/noimg.gif'" class="thumb"><strong class="name${getBlessStatus(item.bless)}">${getItemName(item.item.name, item.enchant, item.attr)} (${commaAdd(item.count)})</strong></li>`;
 						}).join('');
 					} else {
 	           					tpl = `<div class="no-data"><p>아이템이 없습니다.</p></div>`;
@@ -392,7 +392,7 @@ class Mypage {
 	board() {
 		const _ = this;
 
-		includeHTML(document.querySelector('#svg-container'), 'https://cdn.jsdelivr.net/gh/cckiss/web/svg.html', cacheVersion);
+		includeHTML(document.querySelector('#svg-container'), 'https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/svg.html', cacheVersion);
 
 		_.boardParam = {
 			boardType: 'board'	
@@ -507,7 +507,7 @@ class Mypage {
 	comment() {
 		const _ = this;
 
-		includeHTML(document.querySelector('#svg-container'), 'https://cdn.jsdelivr.net/gh/cckiss/web/svg.html', cacheVersion);
+		includeHTML(document.querySelector('#svg-container'), 'https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/svg.html', cacheVersion);
 
 		_.boardParam = {
 			boardType: 'comment'	

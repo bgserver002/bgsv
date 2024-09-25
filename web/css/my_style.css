@@ -3,10 +3,10 @@
 body.ingame .gnb_wrap {padding-top: 50px;}
 .wrap-header .header .header-title {display: none; margin: 0; padding: 0; font-size: 21px; color: #fff; letter-spacing: -1px; text-align: center; font-weight: 400;line-height: 1.2;}
 body.ingame #nc-cnb.is-sticky .ncc-header {background-color: #192950!important;}
-.custom-theme#nc-cnb .ncc-gnb-wrap .ncc-bi {background-image: url(https://cdn.jsdelivr.net/gh/cckiss/web/img/bi-lineageremaster-type1.png); width: 84px; height: 35px; margin-top: 11px; text-indent: -9999em; white-space: nowrap; overflow: hidden;background-size: cover; background-repeat: no-repeat; background-position: center center;}
-.custom-theme#nc-cnb.is-sticky .ncc-gnb-wrap .ncc-bi {background-image: url(https://cdn.jsdelivr.net/gh/cckiss/web/img/bi-lineageremaster-type2.png); width: 84px; height: 35px; margin-top: 11px;}
-.ncc-search legend:before {line-height: 12px; content: ""; display: inline-block; width: 36px; height: 36px; margin: 10px 8px 10px 0; background-image: url(https://cdn.jsdelivr.net/gh/cckiss/web/img/icon-search.png); background-size: 36px 36px; background-position: 50%; background-repeat: no-repeat;}
-.ncc-search .ncc-search-wrap:before {background-image: url(https://cdn.jsdelivr.net/gh/cckiss/web/img/icon-search_bk.png); background-position: 50%; background-repeat: no-repeat; background-size: 20px 19px; content: ""; display: none; height: 100%; left: 5px; position: absolute; top: 0; width: 32px; z-index: 5;}
+.custom-theme#nc-cnb .ncc-gnb-wrap .ncc-bi {background-image: url(https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/img/bi-lineageremaster-type1.png); width: 84px; height: 35px; margin-top: 11px; text-indent: -9999em; white-space: nowrap; overflow: hidden;background-size: cover; background-repeat: no-repeat; background-position: center center;}
+.custom-theme#nc-cnb.is-sticky .ncc-gnb-wrap .ncc-bi {background-image: url(https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/img/bi-lineageremaster-type2.png); width: 84px; height: 35px; margin-top: 11px;}
+.ncc-search legend:before {line-height: 12px; content: ""; display: inline-block; width: 36px; height: 36px; margin: 10px 8px 10px 0; background-image: url(https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/img/icon-search.png); background-size: 36px 36px; background-position: 50%; background-repeat: no-repeat;}
+.ncc-search .ncc-search-wrap:before {background-image: url(https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/img/icon-search_bk.png); background-position: 50%; background-repeat: no-repeat; background-size: 20px 19px; content: ""; display: none; height: 100%; left: 5px; position: absolute; top: 0; width: 32px; z-index: 5;}
 .ncc-search.is-active .ncc-search-wrap:before {display: block;}
 
 body.ingame .ncc-search legend:before {opacity: 0.6;}
@@ -34,7 +34,7 @@ body.ingame #nc-cnb[data-cnb-type] .ncc-depth2-list-wrap .ncc-depth2-list-items.
 body.ingame .ncc-depth2-list-wrap:before {border-bottom: 1px solid transparent;}
 body.ingame #nc-cnb[data-cnb-type] .ncc-search legend {right: 10px;}
 
-.custom-theme#nc-cnb .ncc-lnb-header-bi .ncc-bi {background-image: url(https://cdn.jsdelivr.net/gh/cckiss/web/img/bi-lineageremaster-type2.png); width: 84px; height: 35px; margin-top: 11px; text-indent: -9999em; white-space: nowrap; overflow: hidden; background-size: cover; background-repeat: no-repeat; background-position: center center;}
+.custom-theme#nc-cnb .ncc-lnb-header-bi .ncc-bi {background-image: url(https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/img/bi-lineageremaster-type2.png); width: 84px; height: 35px; margin-top: 11px; text-indent: -9999em; white-space: nowrap; overflow: hidden; background-size: cover; background-repeat: no-repeat; background-position: center center;}
 body.ncc-dimmed #nc-cnb .ncc-dimmed {opacity: .6; visibility: visible;}
 body.ncc-dimmed #nc-cnb .ncc-dimmed.is-active-left, body.ncc-dimmed #nc-cnb .ncc-dimmed.is-active-right {z-index: 9100025;}
 .main1{background: #f4f5f7; padding-top: 30px; padding-bottom: 10px;}
@@ -66,7 +66,7 @@ body.ncc-dimmed #nc-cnb .ncc-dimmed.is-active-left, body.ncc-dimmed #nc-cnb .ncc
 #nc-cnb .ncc-ncservice-item-plaync a span {display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; margin: 0 4px; color: #c38b61;}
 
 #ncCommunityList .no-data {text-align: center; display: table; width: 100%;}
-#ncCommunityList .no-data:before {content: ''; display: inline-block; background-image: url(https://cdn.jsdelivr.net/gh/cckiss/web/img/goods/sprite.png?1569198782739); background-repeat: no-repeat; background-size: 630px 555px; background-position: -500px -130px; width: 110px; height: 110px; font-size: 0;}
+#ncCommunityList .no-data:before {content: ''; display: inline-block; background-image: url(https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/img/goods/sprite.png?1569198782739); background-repeat: no-repeat; background-size: 630px 555px; background-position: -500px -130px; width: 110px; height: 110px; font-size: 0;}
 #ncCommunityList .no-data .no-data-desc {padding: 15px 0 25px 0; font-size: 15px; color: #707070;}
 
 body.launcher .gnb_wrap {padding-top: 50px;}
@@ -92,7 +92,7 @@ body.launcher #nc-cnb.is-sticky .ncc-header {top: 0px;}
 body.launcher #nc-cnb .ncc-gnb-wrap {padding-left: 0px;}
 body.launcher #nc-cnb .ncc-header.is-child-nav {height: 0px;}
 body.launcher .ncc-search {top: 0px;}
-body.launcher #nc-cnb.is-sticky .ncc-search legend:before {background-image: url(https://cdn.jsdelivr.net/gh/cckiss/web/img/icon-search.png); background-size: 36px 36px; background-position: 50%; background-repeat: no-repeat;}
+body.launcher #nc-cnb.is-sticky .ncc-search legend:before {background-image: url(https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/img/icon-search.png); background-size: 36px 36px; background-position: 50%; background-repeat: no-repeat;}
 body.launcher #nc-cnb[data-cnb-type] .ncc-search .ncc-search-wrap {top: 4px;}
 body.launcher .promotionUtilForm .promotionUtilForm_container {padding-top: 4%;}
 body.launcher #nc-cnb .ncc-login--info__server, body.launcher #nc-cnb .ncc-profile-links a.ncc-profile-logout {display: none;}
@@ -133,7 +133,7 @@ body.launcher #nc-cnb .ncc-login--before .ncc-login__link-login {display: none;}
 
 /* popup */
 #layer_alert {position: fixed; left: 0 !important; right: 0 !important; top: 0 !important; bottom: 0 !important; margin: auto; width: 280px; height: 185px;border: 1px solid #E2E0E0;background-color: #fff;display: none;z-index: 10000001;-webkit-box-shadow: 0 2px 12px 0 rgb(0 0 0 / 30%);box-shadow: 0 2px 12px 0 rgb(0 0 0 / 30%);}
-#layer_alert .btn_close {position: absolute; right: 10px; top: 14px; width: 17px; height: 17px; cursor: pointer; z-index: 10000; text-indent: -10000em; color: rgba(0,0,0,0); background-image: url(https://cdn.jsdelivr.net/gh/cckiss/web/img/goods/sprite.png?1569198782739); background-repeat: no-repeat; background-size: 630px 555px; background-position: -610px -190px; width: 20px; height: 20px; font-size: 0; display: none;}
+#layer_alert .btn_close {position: absolute; right: 10px; top: 14px; width: 17px; height: 17px; cursor: pointer; z-index: 10000; text-indent: -10000em; color: rgba(0,0,0,0); background-image: url(https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/img/goods/sprite.png?1569198782739); background-repeat: no-repeat; background-size: 630px 555px; background-position: -610px -190px; width: 20px; height: 20px; font-size: 0; display: none;}
 #layer_alert .header {position: relative; z-index: 100; margin: 0; padding: 0 0 0 30px; height: 44px; line-height: 44px; background-color: #444; font-size: 16px; font-weight: 700; color: #fff; display: none;}
 #layer_alert .conWrap {display: table; width: 100%; min-height: 125px;}
 #layer_alert .con {font-size: 12px; font-family: NotoSans, -apple-system, BlinkMacSystemFont, "맑은 고딕", "Malgun Gothic", Dotum, "돋움", "Microsoft NeoGothic", Roboto, Helvetica, "Droid sans", Arial, sans-serif; font-weight: normal; -webkit-text-size-adjust: none;}
@@ -230,10 +230,10 @@ body.modal-open {overflow: hidden;}
 	.nc-banner[data-type=toast].is-show { right: 0; transform: translateX(0) translateY(0);}
 }
 @media (min-width: 960px) {
-	.wrap-header {position: static; min-height: 197px;background-color: #452b34;background-image: url(https://cdn.jsdelivr.net/gh/cckiss/web/img/header-lineageremaster.jpg);background-repeat: no-repeat;background-size: 2560px auto;background-position: 50% 50%;}
+	.wrap-header {position: static; min-height: 197px;background-color: #452b34;background-image: url(https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/img/header-lineageremaster.jpg);background-repeat: no-repeat;background-size: 2560px auto;background-position: 50% 50%;}
 	.wrap-header .header {position: relative; margin: 0 auto;}
 	.wrap-header .header .header-title {font-size: 32px;}
-	.custom-theme#nc-cnb .ncc-gnb-wrap .ncc-bi {background-image: url(https://cdn.jsdelivr.net/gh/cckiss/web/img/bi-lineageremaster-type1.png); width: 84px; height: 35px; margin-top: 11px;}
+	.custom-theme#nc-cnb .ncc-gnb-wrap .ncc-bi {background-image: url(https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/img/bi-lineageremaster-type1.png); width: 84px; height: 35px; margin-top: 11px;}
 	.ncc-search legend:before {margin: 11px; opacity: .7;}
 	#nc-cnb[data-cnb-type] .ncc-search .ncc-search-wrap:before { top: 0; bottom: 0;}
 	.section-promotion .promotion_admin_util {right: 20px; top: 28%;}

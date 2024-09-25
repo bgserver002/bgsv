@@ -4579,13 +4579,13 @@ class SectionContent {
 
 		function board_tmpl_item (item, key) {
 			return `<div class="slick-item"><a href="javascript:urlform('${item.rownum}', 'post', '/board/view');">` +
-				`<dl><dd class="thumb" style="background-image:url('${!item.mainImg ? `https://cdn.jsdelivr.net/gh/cckiss/web/img/updateThum/server_00${key + 1}.jpg` : item.mainImg}');"><span class="flag">${item.name}</span></dd>` +
+				`<dl><dd class="thumb" style="background-image:url('${!item.mainImg ? `https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/img/updateThum/server_00${key + 1}.jpg` : item.mainImg}');"><span class="flag">${item.name}</span></dd>` +
 				`<dt><strong>${item.title}</strong></dt></dl></a></div>`;
 		}
 
 		function contents_tmpl_item (item, key) {
 			return `<div class="slick-item"><a href="javascript:urlform('${item.rownum}', 'post', '/contents/view');">` +
-				`<dl><dd class="thumb" style="background-image:url('${!item.mainImg ? `https://cdn.jsdelivr.net/gh/cckiss/web/img/eventThum/event_00${key + 1}.jpg` : item.mainImg}');"><span class="flag">${item.name}</span></dd>` +
+				`<dl><dd class="thumb" style="background-image:url('${!item.mainImg ? `https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/img/eventThum/event_00${key + 1}.jpg` : item.mainImg}');"><span class="flag">${item.name}</span></dd>` +
 				`<dt><strong>${item.title}</strong></dt></dl></a></div>`;
 		}
 
@@ -4796,7 +4796,7 @@ class NshopContent {
 						headerUrl : '/notice',
 						title : !main_news ? BOARD.NO_DATA : main_news.title,
 						url : !main_news ? `javascript:;` : `javascript:urlTypeform('0', '${main_news.rownum}', 'post', '/notice/view');`,
-						thumbnail : !main_news ? `` :  !main_news.mainImg ? `https://cdn.jsdelivr.net/gh/cckiss/web/img/mainContent/notice.jpg` : main_news.mainImg
+						thumbnail : !main_news ? `` :  !main_news.mainImg ? `https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/img/mainContent/notice.jpg` : main_news.mainImg
 					};
 					break;
 				case 'UPDATE':
@@ -4804,7 +4804,7 @@ class NshopContent {
 						header : '업데이트',
 						contentsId : 'update',
 						headerUrl : '/update',
-						thumbnail : !element ? `` : !element.mainImg ? `https://cdn.jsdelivr.net/gh/cckiss/web/img/mainContent/event.jpg` : element.mainImg,
+						thumbnail : !element ? `` : !element.mainImg ? `https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/img/mainContent/event.jpg` : element.mainImg,
 						title : !element ? BOARD.NO_DATA : element.title,
 						desc : !element ? '' : element.content,
 						url : !element ? `javascript:;` : `javascript:urlTypeform('1', '${element.rownum}', 'post', '/update/view');`
@@ -4815,7 +4815,7 @@ class NshopContent {
 						header : '이벤트',
 						contentsId : 'event',
 						headerUrl : '/event',
-						thumbnail : !element ? `` : !element.mainImg ? `https://cdn.jsdelivr.net/gh/cckiss/web/img/mainContent/update.jpg` : element.mainImg,
+						thumbnail : !element ? `` : !element.mainImg ? `https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/img/mainContent/update.jpg` : element.mainImg,
 						title : !element ? BOARD.NO_DATA : element.title,
 						desc : !element ? '' : element.content,
 						url : !element ? `javascript:;` : `javascript:urlTypeform('2', '${element.rownum}', 'post', '/event/view');`
@@ -4860,10 +4860,10 @@ class NshopContent {
 					contiGroupData.nshop = element;
 					break
 				case 'MODAL':
-					includeJS('https://cdn.jsdelivr.net/gh/cckiss/web/js/modal.min.js', cacheVersion);
+					includeJS('https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/js/modal.min.js', cacheVersion);
 					break;
 				case 'TOAST':
-					includeJS('https://cdn.jsdelivr.net/gh/cckiss/web/js/toast.min.js', cacheVersion);
+					includeJS('https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/js/toast.min.js', cacheVersion);
 					break;
 				default:
 					console.log('UNDEFINED_INDEX_DATA_KEY : ' + key);

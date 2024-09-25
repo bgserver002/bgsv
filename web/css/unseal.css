@@ -35,7 +35,7 @@ section h1, section h2, section h3, section h4, section h5 {margin: 0; padding: 
 .section-select .ui-dropdown.ui-dropdown-server .option ul, .wrap-returnbrave-recommend-content3 .ui-dropdown.ui-dropdown-server .option ul, .wrap-returnbrave-recommend-top5 .ui-dropdown.ui-dropdown-server .option ul, .wrap-section-beginner section.section-top .ui-dropdown.ui-dropdown-server .option ul, .wrap-section-unseal .ui-dropdown.ui-dropdown-server .option ul, section menu, section ol, section ul {list-style: none; margin: 0; padding: 0;}
 .section-unseal-process .unseal-process .process ol {position: relative; text-align: center;}
 .section-unseal-process .unseal-process .process ol li {min-height: 146px; margin-bottom: 70px; text-align: center; border: 1px solid #c7c7cc; border-radius: 10px; background-color: #fff;}
-.section-unseal-process .unseal-process .process ol li::after {background-image: url(https://cdn.jsdelivr.net/gh/cckiss/web/img/unseal/arrow.png); background-size: 88px 37px; background-position: center center; background-repeat: no-repeat; display: block; content: ''; position: absolute; left: calc(50% - 83px / 2); width: 83px; height: 37px; margin-top: 20px;}
+.section-unseal-process .unseal-process .process ol li::after {background-image: url(https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/img/unseal/arrow.png); background-size: 88px 37px; background-position: center center; background-repeat: no-repeat; display: block; content: ''; position: absolute; left: calc(50% - 83px / 2); width: 83px; height: 37px; margin-top: 20px;}
 .section-unseal-process .unseal-process .process ol li h3 {padding: 12px 5px 15px; color: #1f1f1f; font-size: 16px; border-top-left-radius: 10px; border-top-right-radius: 10px; background-color: #fbf4ee;}
 .section-unseal-process .unseal-process .process.unseal h3 {background-color: #f0f3f7;}
 .section-unseal-process .unseal-process .process ol li p {height: 90px; padding: 33px 25px 25px; font-size: 15px; color: rgba(0, 0, 0, 0.93);}
@@ -58,7 +58,7 @@ section h1, section h2, section h3, section h4, section h5 {margin: 0; padding: 
 .section-service.homecoming-village .village-info dl dd ul li::before, .wrap-section-service .passwordagain-info dl dd ul li::before, .wrap-section-service ul.notice-text li::before, .wrap-section-unseal ul.notice-text li::before {content: ''; display: inline-block; width: 1px; height: 1px; margin-right: 6px; margin-top: -4px; border: .5px solid #c9cdd4; border-radius: 30px; vertical-align: middle; background-color: #c9cdd4;}
 .wrap-section-service .passwordagain-info dl dd ul li span, .wrap-section-service ul.notice-text li span, .wrap-section-unseal ul.notice-text li span {display: inline-block; width: calc(100% - 10px); vertical-align: top;}
 .wrap-section-service .section-info-text h2, .wrap-section-unseal .section-info-text h2 {padding: 0 0 10px; color: #1f1f1f; font-size: 16px;}
-.wrap-section-service .section-info-text h2::before, .wrap-section-unseal .section-info-text h2::before {background-image: url(https://cdn.jsdelivr.net/gh/cckiss/web/img/icon-warning.png); background-size: 21px 21px; background-position: center center; background-repeat: no-repeat; display: inline-block; content: ''; width: 21px; height: 21px; margin-right: 8px; vertical-align: middle;}
+.wrap-section-service .section-info-text h2::before, .wrap-section-unseal .section-info-text h2::before {background-image: url(https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/img/icon-warning.png); background-size: 21px 21px; background-position: center center; background-repeat: no-repeat; display: inline-block; content: ''; width: 21px; height: 21px; margin-right: 8px; vertical-align: middle;}
 .wrap-section-service .section-info-text li, .wrap-section-unseal .section-info-text li {padding: 0 0 5px 20px;  color: rgba(0, 0, 0, 0.93); font-size: 12px;}
 .wrap-section-service .section-info-text li::before, .wrap-section-unseal .section-info-text li::before {content: "-"; display: inline-block; color: #d8d8d8; font-size: 12px; vertical-align: middle; margin-right: 5px;}
 .wrap-section-service .section-info-text li span, .wrap-section-unseal .section-info-text li span {display: inline-block; width: calc(100% - 15px); vertical-align: top;}
@@ -108,7 +108,7 @@ section h1, section h2, section h3, section h4, section h5 {margin: 0; padding: 
 	.ui-slidetab .btns li a.on {color: #C38B61; line-height: 50px; border-top: 2px solid #C38B61;  border-bottom: 0; background-color: #fff;}
 	.wrap-section-unseal {padding: 30px 0 0;}
 	.wrap-section-service .section-info-text, .wrap-section-unseal .section-info-text {margin: 0 auto;}
-	.wrap-section-service .top-area.unseal, .wrap-section-unseal .top-area.unseal {background-image: url(https://cdn.jsdelivr.net/gh/cckiss/web/img/unseal/header-top.png); background-size: 209px 130px; background-repeat: no-repeat; border: 5px solid #f4f5f7; background-position: right bottom;}
+	.wrap-section-service .top-area.unseal, .wrap-section-unseal .top-area.unseal {background-image: url(https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/img/unseal/header-top.png); background-size: 209px 130px; background-repeat: no-repeat; border: 5px solid #f4f5f7; background-position: right bottom;}
 	.wrap-section-unseal .top-area {border-bottom-width: 5px;}
 	.wrap-section-service .top-area, .wrap-section-unseal .top-area {min-height: 163px; padding: 0;}
 	.wrap-section-service .top-area p, .wrap-section-unseal .top-area p {width: 580px;}
@@ -138,5 +138,5 @@ section h1, section h2, section h3, section h4, section h5 {margin: 0; padding: 
 	.ui-slidetab .btns li {position: relative; width: auto !important;}
 }
 @media (min-width: 1260px) {
-	.wrap-section-service .top-area.unseal, .wrap-section-unseal .top-area.unseal {background-image: url(https://cdn.jsdelivr.net/gh/cckiss/web/img/unseal/header-top.png); background-size: 261px 163px; background-repeat: no-repeat; background-position: right bottom;}
+	.wrap-section-service .top-area.unseal, .wrap-section-unseal .top-area.unseal {background-image: url(https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/img/unseal/header-top.png); background-size: 261px 163px; background-repeat: no-repeat; background-position: right bottom;}
 }

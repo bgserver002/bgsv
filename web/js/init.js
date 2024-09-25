@@ -662,13 +662,13 @@ class Noti {
 						`<a>` +
 							`<p class="noticeMsg">${item.logContent}&nbsp;-&nbsp;${moment(new Date(item.insertTime)).format('YYYY-MM-DD')}</p>` +
 							`<a class="notiDelBtn" data-id="${item.id}" title="삭제">삭제</a>` +
-							`<div class="thumb"><img class="icon" src="https://cdn.jsdelivr.net/gh/cckiss/web/img/${item.type == 'NSHOP_BUY' ? 30005 : item.type == 'COUPON_USE' ? 30001 : item.type == 'NCOIN_GIFT' ? 30002 : item.type == 'CASH_CHARGE' ? 27011 : 27009}.png?${cacheVersion}" alt="nickname"></div>` +
+							`<div class="thumb"><img class="icon" src="https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/img/${item.type == 'NSHOP_BUY' ? 30005 : item.type == 'COUPON_USE' ? 30001 : item.type == 'NCOIN_GIFT' ? 30002 : item.type == 'CASH_CHARGE' ? 27011 : 27009}.png?${cacheVersion}" alt="nickname"></div>` +
 						`</a>` +
 					`</div>` + 
 				`</li>`;
 			}).join('');
 		} else {
-			tpl = `<li class="on"><div class="wrapNotice"><a href="javascript:;"><p class="noticeMsg">알림이 없습니다.</p><div class="thumb"><img class="icon" src="https://cdn.jsdelivr.net/gh/cckiss/web/img/27009.png?${cacheVersion}" alt="nickname"></div></a></div></li>`;
+			tpl = `<li class="on"><div class="wrapNotice"><a href="javascript:;"><p class="noticeMsg">알림이 없습니다.</p><div class="thumb"><img class="icon" src="https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/img/27009.png?${cacheVersion}" alt="nickname"></div></a></div></li>`;
 		}
 
 		_.wrap.innerHTML = `<ul class="ncc-noti-tab">` +
@@ -703,7 +703,7 @@ class Noti {
 			$(obj).closest('li.on').remove();// 선택 태그 제거
 			if (!data) {
 				$('.ncc-noti-tab span').css('display', 'none');
-				$('#notiList ul').append('<li class="on"><div class="wrapNotice"><a href="javascript:;"><p class="noticeMsg">알림이 없습니다.</p><div class="thumb"><img class="icon" src="https://cdn.jsdelivr.net/gh/cckiss/web/img/27009.png?${cacheVersion}" alt="nickname"></div></a></div></li>');
+				$('#notiList ul').append('<li class="on"><div class="wrapNotice"><a href="javascript:;"><p class="noticeMsg">알림이 없습니다.</p><div class="thumb"><img class="icon" src="https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/img/27009.png?${cacheVersion}" alt="nickname"></div></a></div></li>');
 			} else {
 				$('.ncc-noti-tab span').text(data);
 			}
@@ -848,8 +848,8 @@ class Login {
 		}
 
 		_.wrap.innerHTML = !account.firstChar ? 
-			`<div class="ncc-login--after"><div class="ncc-login--mobile"><button class="ncc-login--mobile-btn"><img src="https://cdn.jsdelivr.net/gh/cckiss/web/img/user_unkown.jpg?${cacheVersion}" class="ncc-login--info__thumb"></button><span class="ncc-login--info__noti"></span></div><div class="ncc-login--info"><a><img src="https://cdn.jsdelivr.net/gh/cckiss/web/img/user_unkown.jpg?${cacheVersion}" class="ncc-login--info__thumb"><span class="ncc-login--info__char">미설정</span><span class="ncc-login--info__server">${serverName}, 0Lv</span></a></div></div>` 
-			: `<div class="ncc-login--after"><div class="ncc-login--mobile"><button class="ncc-login--mobile-btn"><img src="https://cdn.jsdelivr.net/gh/cckiss/web${account.firstChar.profileUrl}?${cacheVersion}" class="ncc-login--info__thumb"></button><span class="ncc-login--info__noti"></span></div><div class="ncc-login--info"><a><img src="https://cdn.jsdelivr.net/gh/cckiss/web${account.firstChar.profileUrl}?${cacheVersion}" class="ncc-login--info__thumb"><span class="ncc-login--info__char">${account.firstChar.name}</span><span class="ncc-login--info__server">${serverName}, ${account.firstChar.level}Lv</span></a></div></div>`
+			`<div class="ncc-login--after"><div class="ncc-login--mobile"><button class="ncc-login--mobile-btn"><img src="https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/img/user_unkown.jpg?${cacheVersion}" class="ncc-login--info__thumb"></button><span class="ncc-login--info__noti"></span></div><div class="ncc-login--info"><a><img src="https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/img/user_unkown.jpg?${cacheVersion}" class="ncc-login--info__thumb"><span class="ncc-login--info__char">미설정</span><span class="ncc-login--info__server">${serverName}, 0Lv</span></a></div></div>` 
+			: `<div class="ncc-login--after"><div class="ncc-login--mobile"><button class="ncc-login--mobile-btn"><img src="https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web${account.firstChar.profileUrl}?${cacheVersion}" class="ncc-login--info__thumb"></button><span class="ncc-login--info__noti"></span></div><div class="ncc-login--info"><a><img src="https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web${account.firstChar.profileUrl}?${cacheVersion}" class="ncc-login--info__thumb"><span class="ncc-login--info__char">${account.firstChar.name}</span><span class="ncc-login--info__server">${serverName}, ${account.firstChar.level}Lv</span></a></div></div>`
 			;
 
 		// 오른쪽 패널 생성
@@ -890,11 +890,11 @@ class Right {
 		const main_character = account.firstChar;
 
 		_.wrap.innerHTML = 
-		`<div class="ncc-userinfo" style="background-image: url('https://cdn.jsdelivr.net/gh/cckiss/web${main_character ? main_character.profileUrl : `https://cdn.jsdelivr.net/gh/cckiss/web/img/user_unkown.jpg`}?${cacheVersion}');">` +
+		`<div class="ncc-userinfo" style="background-image: url('https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web${main_character ? main_character.profileUrl : `https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/img/user_unkown.jpg`}?${cacheVersion}');">` +
 			`<a class="ncc-right-panel-close">Close</a>` +
 			`<div class="ncc-profile is-nc-account">` +
 				`<div class="ncc-profile-wrap">` +
-					`<a class="ncc-profile-img ic-home" href="/account/mypage" target="_self"><img src="https://cdn.jsdelivr.net/gh/cckiss/web${main_character ? main_character.profileUrl : `https://cdn.jsdelivr.net/gh/cckiss/web/img/user_unkown.jpg`}?${cacheVersion}"></a>` +
+					`<a class="ncc-profile-img ic-home" href="/account/mypage" target="_self"><img src="https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web${main_character ? main_character.profileUrl : `https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/img/user_unkown.jpg`}?${cacheVersion}"></a>` +
 					`<div class="ncc-profile-info">` +
 						`<span class="ncc-profile-info__char">${!main_character || account.objId == 0 ? `대표 케릭터 미설정` : main_character.name}</span>` +
 						`<span class="ncc-profile-info__server">${serverName}</span>` +
@@ -1575,7 +1575,7 @@ function get_gamestart_auth_from_launcher(token) {
 // 에러페이지 출력
 function showError(request, status, error) {
 	const doc = 
-	`<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/cckiss/web/css/error.css?${cacheVersion}"><div class="error-container" id="container"><div class="logo"><a class="logo-link" href="/"><img src="https://cdn.jsdelivr.net/gh/cckiss/web/img/plaync.png?${cacheVersion}" alt="plaync icon"/></a></div><div class="error-contents-wrap">` +
+	`<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/css/error.css?${cacheVersion}"><div class="error-container" id="container"><div class="logo"><a class="logo-link" href="/"><img src="https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/img/plaync.png?${cacheVersion}" alt="plaync icon"/></a></div><div class="error-contents-wrap">` +
 	`<header class="error-header"><h1 class="title">일시적으로 페이지를 불러올 수 없습니다.</h1><p class="subcopy">동일한 문제가 지속적으로 발생할 경우, 고객지원으로 문의해 주시기 바랍니다.</p></header><div class="error-contents">` +
 	`<div class="error-btn-wrap"><button class="btn btn-error btn-error--o btn-back" onclick="history.go(-1);">이전 페이지</button><a href="/customer" class="btn btn-error btn-inquiry">고객지원</a></div>` +
 	`<div class="links"><a href="/"><span>홈</span></a></div></div></div><footer id="footer" class="error-footer-wrap"><p class="copyright">Ⓒ ${serverName} Corporation. All Rights Reserved.</p></footer></div>`;

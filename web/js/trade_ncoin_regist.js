@@ -8,7 +8,7 @@ let select_item;
 let select_amount;
 let select_price;
 $(function() {
-	includeHTML(document.querySelector('#svg-container'), 'https://cdn.jsdelivr.net/gh/cckiss/web/svg.html', cacheVersion);
+	includeHTML(document.querySelector('#svg-container'), 'https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/svg.html', cacheVersion);
 	init_progress();
 });
 

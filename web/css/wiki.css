@@ -13,7 +13,7 @@
 .wiki__h1 h1 {font-size: 21px; font-weight: 300; line-height: 1.25; color: #1f1f1f;}
 .wiki__h2 h2 {font-size: 18px; font-weight: 300; line-height: 1.25; color: #1f1f1f;}
 .wiki__h1 .inform_area {padding: 25px 25px 25px 47px; border: 1px solid #e5d9d0; background-color: #fefbf5; text-indent: -28px; color: #494949; font-size: 13px; margin-top: 10px; line-height: 1.69; letter-spacing: -.5px;}
-.wiki__h1 .inform_area::before {background-image: url(https://cdn.jsdelivr.net/gh/cckiss/web/img/icon-warning.png); background-size: 21px 21px; background-position: center center; background-repeat: no-repeat; display: inline-block; width: 21px; height: 21px; margin-right: 8px; vertical-align: middle; content: '';}
+.wiki__h1 .inform_area::before {background-image: url(https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/img/icon-warning.png); background-size: 21px 21px; background-position: center center; background-repeat: no-repeat; display: inline-block; width: 21px; height: 21px; margin-right: 8px; vertical-align: middle; content: '';}
 .wiki__h1 .inform_area em {font-style: normal; color: #c69c7c;}
 .wiki__group {padding-top: 120px;}
 .wiki__h1+.wiki__group {padding-top: 0;}

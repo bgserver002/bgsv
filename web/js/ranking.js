@@ -61,7 +61,7 @@ class Ranking {
 			}			
 			return `<div class="detail-info-list">` +
 				`<dl>` +
-					`<dt class="thumb"><img src="https://cdn.jsdelivr.net/gh/cckiss/web${item.profileUrl}"></dt>` +
+					`<dt class="thumb"><img src="https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web${item.profileUrl}"></dt>` +
 					`<dd><strong class="name">${item.name}</strong><span class="server">${serverName}</span><span class="level">${item.level}Lv.</span></dd>` +
 				`</dl>` +
 				`<div class="ranking-info">` +

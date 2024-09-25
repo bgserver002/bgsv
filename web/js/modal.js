@@ -51,7 +51,7 @@ class ModalLayer {
 			this.el.innerHTML = 
 				`<div class="nc-modal__dialog" role="document"><div class="nc-modal__content">` +
 				`<div class="nc-modal__header"><div class="nc-modal__title"></div><button type="button" class="nc-modal__close"><svg viewBox="0 0 21 20" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd" stroke-linecap="square"><path d="m1.238 0.238 19.145 19.145m-19.145 0 9.549-9.55 7.398-7.397 2.198-2.198"></path></g></svg></button></div>` +
-				`<div class="nc-modal__body"><div class="nc-banner-modal-pc"><a><img src="https://cdn.jsdelivr.net/gh/cckiss/web${_data.SRC}"></a></div></div>` +
+				`<div class="nc-modal__body"><div class="nc-banner-modal-pc"><a><img src="https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web${_data.SRC}"></a></div></div>` +
 				`<div class="nc-modal__footer"><div><button type="button" class="nc-modal__btn nc-modal__btn--pri"><span class="nc-modal__btn-text">그만보기</span></button><button type="button" class="nc-modal__btn nc-modal__btn--sec"><span class="nc-modal__btn-text">닫기</span></button></div></div></div></div></div>`;
 			break;
 		case 'PAGE':
