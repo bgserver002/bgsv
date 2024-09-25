@@ -57,7 +57,7 @@ class Mypage {
 		const _ = this;
 
 		_.pledge		= _.main_character.pledge;
-		$('.section-my-character.char-info strong').text(!_.pledge ? `없음` : `${_.pledge.name}(${_.pledge.leader_name})&nbsp;/&nbsp;포인트&nbsp;${_.pledge.contribution}&nbsp;/&nbsp;혈맹원수&nbsp;${_.pledge.member_size}/50명`);
+		$('.section-my-character.char-info strong').html(!_.pledge ? `없음` : `${_.pledge.name}(${_.pledge.leader_name})&nbsp;/&nbsp;포인트&nbsp;${_.pledge.contribution}&nbsp;/&nbsp;혈맹원수&nbsp;${_.pledge.member_size}/50명`);
 
 		if (account.gm) {
 			$('#gm-info').html('<i style="color: #aa8060;">관리자</i>');
