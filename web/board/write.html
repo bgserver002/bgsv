@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>{SERVER_NAME}</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<meta name="robots" content="noindex, nofollow" />
+
+	<!-- Mobile -->
+	<meta name="HandheldFriendly" content="True" />
+	<meta name="MobileOptimized" content="320" />
+	<meta name="viewport" content="user-scalable=no, maximum-scale=1.0, minimum-scale=1.0, width=device-width, initial-scale=1.0" />
+
+	<!-- shortcut -->
+	<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/img/lineage.ico?{CACHE_VERSION}" type="image/x-icon">
+	<link rel="icon" href="https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/img/lineage.ico?{CACHE_VERSION}" type="image/x-icon">
+	<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/img/lineage_home.png?{CACHE_VERSION}" type="image/png">
+
+	<!-- css -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/xpressengine/xeicon@2.3.3/xeicon.min.css?{CACHE_VERSION}">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/css/fonts.css?{CACHE_VERSION}" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/css/nc-cnb.css?{CACHE_VERSION}" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/css/l1.main.css?{CACHE_VERSION}">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/css/my_style.css?{CACHE_VERSION}">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/css/jquery.scrollbar.css?{CACHE_VERSION}">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/css/community.css?{CACHE_VERSION}">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/css/nccommunity-theme.css?{CACHE_VERSION}">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/css/l1.board.css?{CACHE_VERSION}">
+	
+    
+	<!-- js -->
+ 	<script src="https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/js/jquery-3.3.1.min.js?{CACHE_VERSION}"></script>
+ 
+	<!-- 스크립트 비활성화 유저 리다이렉트 -->
+ 	<noscript><meta http-equiv="Refresh" content="0; URL=/noscript" /></noscript>
+	
+ 	<!-- include libraries(jQuery, bootstrap) -->
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css?{CACHE_VERSION}" rel="stylesheet">
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js?{CACHE_VERSION}"></script>
+	
+	<!-- include summernote css/js -->
+	<link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css?{CACHE_VERSION}" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/css/my.summurnote.css?{CACHE_VERSION}">
+	<script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js?{CACHE_VERSION}"></script>
+	<script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/lang/summernote-ko-KR.min.js?{CACHE_VERSION}"></script>
+
+	<script src="https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/js/jquery.scrollbar.min.js?{CACHE_VERSION}"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js?{CACHE_VERSION}"></script>
+	<script src="https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/js/jquery.number.min.js?{CACHE_VERSION}"></script>
+	<script src="https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/js/util.min.js?{CACHE_VERSION}"></script>
+	<script src="https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/js/popup.min.js?{CACHE_VERSION}"></script>
+ 	<script src="https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/js/storage.min.js?{CACHE_VERSION}"></script>
+	<script src="https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/js/message.min.js?{CACHE_VERSION}"></script>
+</head>
+<style>#layer_alert .btn_modal span.type2 .close {font-size: 12px;float: none;opacity: 1;text-shadow: none;}</style>
+<script type="text/javascript">
+function noBack(){	window.history.forward();	}
+
+//전역 스크립트 변수 선언
+const serverName		= '{SERVER_NAME}';
+const suggestEnable	= '{SUGGEST_ENABLE}';
+const getTime		= '{NOW}';
+const cacheVersion		= '{CACHE_VERSION}';
+const cnb		= {CNB};
+const pageCnbType	= {PAGE_CNB_TYPE};
+const pageCnbSubType	= {PAGE_CNB_SUB_TYPE};
+const account		= {USER_DATA};
+const boardType		= 'FREE';
+</script>
+<body class="page-board">
+	<!-- navi -->
+	<div id="nc-cnb" class="nc-cnb nc-cnb--lineage custom-theme is-top" data-device=""></div>
+	
+	<div id="svg-container" style="display: none;"></div>
+	
+	<div id="container" class="container">
+		<!-- page container -->
+		<div class="wrap-header"><header class="header"><h1 class="header-title">리니지(자유)</h1></header></div>
+		<div class="section-contents">
+			<div class="wrap-contents">
+				<div id="ncCommunityWrite" class="nc-community-write l1-community-free uikit-nccommunity-node">
+					<div class="board-write">
+						<form id="boardWriteForm" name="boardWriteForm" action="/define/board/insert" autocomplete="off" onsubmit="return false">
+							<input type="hidden" name="board_type" id="board_type" value="FREE"/>
+							<input type="hidden" name="dividPath" id="dividPath" value="FREE_"/>
+							<div class="board-write-category"></div>
+							<div class="board-write-title"><input type="text" name="title" id="title" maxlength="50" placeholder="제목"></div>
+							<textarea id="summernote" name="content" style="min-height: 500px;"></textarea>
+							<div class="co-btn-wrap">
+								<div class="left"><button type="button" class="boardWriteCancel co-btn co-btn-round co-btn-write-cancel" onClick="history.back();"><span>취소</span></button></div>
+								<div class="right"><button type="button" class="boardWriteSubmit co-btn co-btn-round co-btn-write-submit" onClick="boardFormSubmit();"><i class="fe-icon-confirm"></i>등록</button></div>
+							</div>
+						</form>
+		    		</div>
+				</div>
+			</div>
+		</div>
+	
+		<!-- wrap-footer -->
+		<div class="wrap-footer"></div>
+	</div>
+	
+	<!-- popup -->
+	<div id="layer_alert" class="default" style="display:none;"></div>
+	<div class="dimmed" style="display: none;">dimmed</div>
+	
+	<!-- script -->
+ 	<script src="https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/js/init.min.js?{CACHE_VERSION}"></script>
+	<script src="https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/js/editor.min.js?{CACHE_VERSION}"></script>
+	<script src="https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/js/board.min.js?{CACHE_VERSION}"></script>
+	<script>
+	(function ($) {
+		"use strict";
+
+		$(document).ready(function () {
+			Editor.instance.init(true);
+		});
+	}(jQuery));
+	</script>
+</body>
+</html>
