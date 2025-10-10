@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>알림</title>
+	<meta charset="UTF-8">
+</head>
+<style>
+#wrap {position: fixed; left: 0; top: 0; right: 0; bottom: 0; background-color: rgba(0,0,0,0.4);}
+#container {position: fixed; left: 0; right: 0; top: 0; bottom: 0; margin: auto; width: 280px; height: 185px; border: 1px solid #E2E0E0; background-color: #fff; -webkit-box-shadow: 0 2px 12px 0 rgb(0 0 0 / 30); box-shadow: 0 2px 12px 0 rgb(0 0 0 / 30);}
+#message_area {display: table; min-height: 125px;}
+#message_area > div {display: table-cell;padding: 0 35px; line-height: 1.4; vertical-align: middle; text-align: center; color: #494949; font-size: 14px;}
+#button_area {text-align: center; padding: 0 0 20px 0;}
+#button_area > span {display: inline-block; font-size: 12px; margin: 0 2px; text-align: center; width: 160px; color: #fff; border-radius: 2px; background-color: #aa8060;}
+#button_area > span > a {display: block; height: 38px; line-height: 38px; text-decoration: none; color: rgba(255,255,255,0.8);}
+</style>
+<body>
+<div id="wrap">
+	<div id="container">
+		<div id="message_area"><div>{MESSAGE}</div></div>
+		<div id="button_area"><span><a href="{LOCATION}">확인</a></span></div>
+	</div>
+</div>
+</body>
+</html>
