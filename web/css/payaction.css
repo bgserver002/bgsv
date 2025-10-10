@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+#app .regist_wrap .container {padding-top: 60px; padding-bottom: 80px;}
+#app .regist_wrap .container .support_agree_tit, #app .regist_wrap .regist_container .point_color {color: #ff6502;}
+#app .regist_wrap .container ul {padding-top: 12px; font-size: 12px;}
+#app .regist_wrap .container .support_content {margin-top: 20px; border: 1px solid #ddd; padding: 10px; text-align: center; background: #1f3263;}
+#app .regist_wrap .container .support_content .support_l strong {font-size: 18px; color: #ff6502;}
+#app .regist_wrap .container .support_content .support_r {padding-top: 5px;}
+#app .regist_wrap .container .support_content .support_r .reward_content {display: block; color: #fff; padding-top: 5px;}
+#app #agree_wrap .agree_check_div {padding-top: 20px; position: relative;}
+#app #agree_wrap .agree_check_div input{display: none;}
+#app #agree_wrap .agree_check_div label {cursor: pointer;}
+#app #agree_wrap .agree_check_div label span {vertical-align: middle; padding-left: 5px; font-weight: 600;}
+#app #agree_wrap .agree_check_div input + label:before{content: ""; display: inline-block; width: 17px; height: 17px; border: 1px solid #1f3263; border-radius: 4px; vertical-align: middle;}
+#app #agree_wrap .agree_check_div input:checked + label:before{content: '✔'; color: #fff; background-color: #1f3263; text-align: center; line-height: 15px;}
+#app .agree_btns {z-index: 11; position: fixed; left: 20px; right: 20px; bottom: 0; text-align: center; background-color: hsla(0, 0%, 96.1%, .85);}
+#app .agree_btns button, #app .btn_wrap button {margin: 0 0 14px; width: 100%; max-width: 580px; height: 52px; background-color: #1f3263; color: #fff; text-align: center; font-size: 16px; line-height: 50px;}
+#app .agree_btns button:hover, #app .btn_wrap button:hover, #app .regist_wrap .regist_container .support_bank_req .support_bank_req_btn button:hover {background-color: #273c73;}
+#app .regist_wrap .regist_container .sub_tit {font-size: 12px; margin-left: 5px;}
+#app .regist_wrap .regist_container .support_bank_req {margin-top: 15px; padding: 15px; background: #fff; text-align: center;}
+#app .regist_wrap .regist_container .support_bank_req .support_bank_req_desc {color: #ff6502;}
+#app .regist_wrap .regist_container .support_bank_req .support_bank_req_btn button {background: #1f3263; color: #fff; padding: 11px 20px; margin-top: 14px; font-size: 16px;}
+#app .regist_wrap .regist_container .support_bank_req .support_bank_req_btn button i {font-size: 26px; vertical-align: top; margin-right: 13px;}
+#app .gm_send {padding-top: 20px; color: #ff6502;}
+#app .charge-name .static .wrapper, #app .charge-value .static .wrapper {position: relative;}
+#app .charge-name .static .wrapper button, #app .charge-value .static .wrapper button {position: absolute; right: 10px; top: 19px; display: none; font-size: 0; background: none; border: 0; width: 19px; height: 19px;}
+#app .charge-value .static .wrapper .show-unit {position: absolute; top: 13px; font-size: 20px;}
+#app .charge-name .static .wrapper button:before, #app .charge-value .static .wrapper button:before {content: ''; background-image: url(https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/img/charge/sprite.png); background-repeat: no-repeat; background-size: 230px 202px; background-position: -135px -180px; width: 17px; height: 17px; font-size: 0; display: block;}
+#app .charge-name .static .wrapper input, #app .charge-value .static .wrapper input {text-indent: 44px; height: 54px; border-bottom: 1px solid #1f326338; font-size: 20px;}
+#app .charge-name .static .wrapper input {background: url(https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/img/29001.png) no-repeat left center; background-size: 24px 24px; background-position: 15px 15px;}
+#app .charge-value .static .wrapper input {background: url(https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/img/icon-won.png) no-repeat left center; background-size: 24px 24px; background-position: 15px 15px;}
+#order_list_btn {position: fixed; top: 57px; right: 42px; background: #ff6502; color: #fff; padding: 7px 11px; border-radius: 5px;}
+#order_list_container {position: absolute; top: 0; background: #fff; width: 100%; padding-top: 48px;}
+#order_list_container h1 {text-align: center; position: fixed; width: 100%; background: #fff; border-bottom: 1px solid #1f3263; height: 48px; color: #ff6502; line-height: 45px; font-weight: 600;}
+#order_list_container h1 i {padding-right: 10px;}
+#order_list_container #order_list {margin-top: 48px; font-size: 12px;}
+#order_list_container #order_list ul li .list_item {width: 15%; text-align: center; display: inline-grid; border-right: 1px solid #ddd; line-height: 25px;}
+#order_list_container #order_list ul li .list_item.amount, #order_list_container #order_list ul li .list_item.name {width: 20%;}
+#order_list_container #order_list ul li .list_item.date {width: 30%;}
+#order_list_container #order_list ul li .list_item:last-child {border-right: none;}
+#order_list_container #order_list ul li .list_item span.key {background: #1f3263; color: #fff; height: 25px;}
+#order_list_container #order_list ul li .list_item span.val {height: 25px;}
+#order_list_container #order_list_close_btn {position: fixed; top: 58px; right: 15px; background: #ff6502; color: #fff; padding: 4px 15px; border-radius: 5px;}
+#app .regist_wrap .container .bank_info .tit {padding: 0 0 5px 0; color: #ff6502; font-size: 20px;}
+#app .regist_wrap .container .bank_info .ex {font-size: 12px; color: red; padding-top: 10px;}
+#app .regist_wrap .container .bank_info .bank_desc, #app .regist_wrap .container .bank_info .order_info {border: 1px solid #ddd; border-bottom: none;}
+#app .regist_wrap .container .bank_info .order_info {margin-top: 20px;}
+#app .regist_wrap .container .bank_info .col {display: flow-root; font-size: 12px; color: #1f3263; line-height: 32px; border-bottom: 1px solid #ddd; padding: 4px 10px;}
+#app .regist_wrap .container .bank_info .key {float: left; font-weight: 600;}
+#app .regist_wrap .container .bank_info .val {float: right;}
+#app .regist_wrap .container .bank_info .order_expire {padding-top: 5px;}
+#app .regist_wrap .container .bank_info .order_expire .val {color: #ff6502; font-size: 20px;}
+#app .regist_wrap .container .bank_info .order_cancel_btn {position: absolute; right: 40px; top: 58px; background: #ff6502; color: #fff; padding: 5px 12px; border-radius: 5px;}
+#app .regist_wrap .container .bank_info .order_cancel_btn:hover, #app .regist_wrap .container .order_init .order_init_cancel_btn:hover, #order_list_btn:hover, #order_list_container #order_list_close_btn:hover {background: #e3610d;}
+#app .regist_wrap .container .order_init {padding-top: 10px; color: #273c73;}
+#app .regist_wrap .container .order_init span {font-size: 14px; font-weight: 600; -webkit-animation: blink 2.5s linear infinite;}
+#app .regist_wrap .container .order_init .order_init_cancel_btn {float: right; background: #ff6502; padding: 4px 13px; color: #fff; border-radius: 5px;}
+
+
+@media (min-width: 480px) {
+    #app .agree_btns {left: 40px; right: 40px;}
+}
+
+@-webkit-keyframes blink {
+    50% { opacity: 0; }
+}
