@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>N코인 충전</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<meta name="robots" content="noindex, nofollow" />
+
+	<!-- Mobile -->
+	<meta name="HandheldFriendly" content="True" />
+	<meta name="MobileOptimized" content="320" />
+	<meta name="viewport" content="user-scalable=no, maximum-scale=1.0, minimum-scale=1.0, width=device-width, initial-scale=1.0" />
+
+	<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/img/charge/charge.ico?{CACHE_VERSION}" type="image/x-icon">
+	<link rel="icon" href="https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/img/charge/charge.ico?{CACHE_VERSION}" type="image/x-icon">
+
+	<!-- css -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/css/charge.css?{CACHE_VERSION}">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/css/my_style.css?{CACHE_VERSION}">
+    
+	<!-- js -->
+ 	<script src="https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/js/jquery-3.3.1.min.js?{CACHE_VERSION}"></script>
+ 	
+ 	<!-- 스크립트 비활성화 유저 리다이렉트 -->
+ 	<noscript><meta http-equiv="Refresh" content="0; URL=/noscript" /></noscript>
+
+	<script src="https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/js/jquery.number.min.js?{CACHE_VERSION}"></script>
+</head>
+<script type="text/javascript">
+function noBack(){	window.history.forward();	}
+
+//전역 스크립트 변수 선언
+const serverName		= '{SERVER_NAME}';
+const getTime		= '{NOW}';
+const cacheVersion		= '{CACHE_VERSION}';
+const account		= {USER_DATA};
+</script>
+<body class="false" oncontextmenu="return false">
+	<div class="container">
+		<header><h1><span>N코인</span> 충전</h1></header>
+		<fieldset>
+			<legend>충전</legend>
+			<div class="scroll-wrapper section-wrap" style="position: absolute;">
+				<div class="section-wrap scroll-content" style="height: auto; margin-bottom: 0px; margin-right: 0px; max-height: none;">
+					<section class="charge-value">
+						<h1><span class="title">충전금액</span></h1>
+
+						<div class="static">
+							<div class="wrapper">
+								<input type="text" autocomplete="off" placeholder="충전할 금액 입력" maxlength="10" name="chargeAmt" id="chargeAmt" class="chargeAmt">
+								<button type="button" class="chargeAmt-reset">reset</button>
+							</div>
+						</div>
+						<div class="message" style="display: none;"></div>
+					</section>
+
+					<section class="charge-type">
+						<div class="charge-type-exist">
+							<div class="type_select_content type_recent_payment" style="display: block;">
+								<div class="type-select">
+									<label for="type_recent_payment">결제 수단</label>
+								</div>
+								<!-- (s) 결제수단 list -->
+								<div class="type-list-wrap">
+									<div class="item">
+										<input type="radio" name="item-select" id="item1" checked="checked">
+										<label for="item1">
+											<!-- (s) 결제수단별 타이틀 출력 -->
+											<span class="type">카카오페이</span>
+											<!-- (s) 결제수단별 이미지 및 수단명 출력여부 체크 -->
+											<span class="logo" style="background:url(https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/img/charge/KakaoPay.png?{CACHE_VERSION}) no-repeat">카카오페이</span>
+										</label>
+									</div>
+								</div>
+								<!-- (e) 결제수단 list -->
+							</div>
+						
+							<div class="type-select"></div>
+						</div>
+					</section>
+					
+					<div id="space-wrap">
+						<section class="charge-notimail" style="padding-top: 20px;">
+							<div class="flip">
+								<ul style="list-style: none; color: #9398aa;">
+								{CHARGE_MESSAGE}
+								</ul>
+							</div>
+						</section>
+					</div>
+
+					<div class="space-wrap">
+						<section class="button">
+							<button type="button" id="charge-button" class="" onclick="ncoinCharge();">충전하기</button>
+						</section>
+					</div>
+				</div>
+			</div>
+		</fieldset>
+	</div>
+	
+	<!-- script -->
+	<script src="https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/js/ncoin_utils.min.js?{CACHE_VERSION}"></script>
+	<script type="text/javascript">
+            $(document).ready(function() {
+		// 자유충전 금액 입력 키다운시
+		$("#chargeAmt").on("keydown",function(e){
+			const keyCode = e.keyCode;
+			if ((keyCode == 17 ) || (keyCode == 18)) {
+				return false;
+			}
+			if (!((keyCode >= 48 && keyCode <= 57) || (keyCode >= 96 && keyCode <= 105) || keyCode == 8 || keyCode ==9)) {
+				return false;
+			}
+
+			var chargeAmtObj = $('.charge-value .chargeAmt');
+			var chargeAmt = NCoinUtils.getChargeAmt(chargeAmtObj.val());
+			setChargeAmount(chargeAmt)
+		});
+
+		// 금액 유저가 직접 입력시 처리 방안.
+		$("#chargeAmt").on("keyup",function(){
+			var chargeAmtObj = $('.charge-value .chargeAmt');
+			var chargeAmt = NCoinUtils.getChargeAmt(chargeAmtObj.val());
+			setChargeAmount(chargeAmt)
+		});
+
+		// 충전 금액 스크립트
+		$('.charge-value .chargeAmt').on({
+			// 충전 금액 포커스 인
+			'focus': function(){
+				$(this).parent().addClass('focus');
+				$('.message').hide();
+				$('.charge-hold').show();
+			},
+			// 충전 금액 포커스 아웃
+			'blur': function(){
+				if ($(this).val()=='') {
+					$(this).parent().removeClass('focus');
+					$('.chargeAmt-reset').fadeOut();
+					return false;
+				}
+
+				var chargeAmtObj = $('.charge-value .chargeAmt');
+				var chargeAmt = NCoinUtils.getChargeAmt(chargeAmtObj.val());
+
+				setChargeAmount(chargeAmt)
+
+				// 금액 리셋 이벤트
+				chargeAmtResetFade();
+				$('.charge-hold').hide();
+			},
+			// 초기화 버튼 출력
+			'keypress': function(){
+				// 금액 리셋 이벤트
+				chargeAmtResetFade();
+			}
+		});
+
+		// 충전 금액 리셋
+		$(document).on('click', '.charge-value .chargeAmt-reset', function(){
+			$('.chargeAmt').val('').focus();
+
+			var chargeAmtObj = $('.charge-value .chargeAmt');
+			var chargeAmt = NCoinUtils.getChargeAmt(chargeAmtObj.val());
+			setChargeAmount(chargeAmt)
+			$('.chargeAmt-reset').fadeOut();
+		});
+	});
+
+	// 금액 리셋이벤트
+	function chargeAmtResetFade() {
+		var chargeAmtObj = $('.charge-value .chargeAmt');
+
+  		if (!chargeAmtObj.val() == '') {
+			$('.chargeAmt-reset').fadeIn();
+ 		} else {
+			$('.chargeAmt-reset').fadeOut();
+		}
+	}
+
+	// 금액 입력, 변경 이벤트에 따른 amount를 세팅하도록 수정함
+	function setChargeAmount(chargeAmt) {
+		var chargeAmtObj = $('.charge-value .chargeAmt');
+		var chargeAmtComma = NCoinUtils.formatCommas(chargeAmt);
+		chargeAmtObj.val(chargeAmtComma);
+		show_unit();
+	}
+
+	// 충전 금액 원 표시
+	function show_unit() {
+		var obj = $('.chargeAmt').val();
+		var digit = obj.length;
+		var d_space = 38;
+		if (digit > 0) {
+			if (digit==5 || digit==6 || digit==7) {
+				digit=digit-1;
+				d_space=d_space+10;
+			}
+			else if (digit>=9) {
+				digit=digit-1;
+				d_space=d_space;
+			}
+			var sp = 16;
+			if (!$('.show-unit').length) { $('.static .wrapper').append('<p class="show-unit"><span>원</span></p>'); }
+			$('.show-unit').css({ 'left' : d_space+(digit*sp) });
+		} else {
+			if ($('.show-unit').length) {
+				$('.static .wrapper .show-unit').remove();
+			}
+		}
+	}
+
+	// 충전하기 유효성 검증
+	function charge_validation() {
+		var chargeAmt = NCoinUtils.getChargeAmt();
+		if (chargeAmt == 0 || chargeAmt == '') {
+            		$('.chargeAmt-reset').fadeOut();
+			$('.charge-value .message').text('충전금액을 입력해 주세요.');
+			$('.charge-value .message').css('display', 'block');
+			return false;
+        		}
+		if ((chargeAmt % 10000) != 0) {
+   			$('.chargeAmt-reset').fadeIn();
+			$('.charge-value .message').text('10,000원 단위로 입력하셔야 합니다.');
+			$('.charge-value .message').css('display', 'block');
+			return false;
+   		}
+		return true;
+	}
+
+	// 충전하기 버튼 클릭 이벤트
+	function ncoinCharge() {
+		if (!this.charge_validation()) {
+			return;
+		}
+		let form = document.createElement("form");
+		form.setAttribute('charset', 'UTF-8');
+		form.setAttribute('method', 'POST');
+		form.setAttribute('action', '/charge/payment');
+
+		let hiddenField = document.createElement('input');
+		hiddenField.setAttribute('type', 'hidden');
+		hiddenField.setAttribute('name', 'charge_amount');
+		hiddenField.setAttribute('value', NCoinUtils.getChargeAmt());
+		form.appendChild(hiddenField);
+
+		document.body.appendChild(form);
+		form.submit();
+	}
+	</script>
+
+</body>
+</html>
