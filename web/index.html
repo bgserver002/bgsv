@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>계좌 등록</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<meta name="robots" content="noindex, nofollow" />
+
+	<!-- Mobile -->
+	<meta name="HandheldFriendly" content="True" />
+	<meta name="MobileOptimized" content="320" />
+	<meta name="viewport" content="user-scalable=no, maximum-scale=1.0, minimum-scale=1.0, width=device-width, initial-scale=1.0" />
+
+	<!-- shortcut -->
+	<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/img/charge/charge.ico?{CACHE_VERSION}" type="image/x-icon">
+	<link rel="icon" href="https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/img/charge/charge.ico?{CACHE_VERSION}" type="image/x-icon">
+	<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/img/lineage_home.png?{CACHE_VERSION}" type="image/png">
+
+	<!-- css -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/css/my_style.css?{CACHE_VERSION}"/>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/css/app.css?{CACHE_VERSION}"/>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/css/bank.css?{CACHE_VERSION}">
+    
+	<!-- js -->
+ 	<script src="https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/js/jquery-3.3.1.min.js?{CACHE_VERSION}"></script>
+ 	
+ 	<!-- 스크립트 비활성화 유저 리다이렉트 -->
+ 	<noscript><meta http-equiv="Refresh" content="0; URL=/noscript" /></noscript>
+
+	<script src="https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/js/jquery.number.min.js?{CACHE_VERSION}"></script>
+	<script src="https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/js/util.min.js?{CACHE_VERSION}"></script>
+	<script src="https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/js/popup.min.js?{CACHE_VERSION}"></script>
+</head>
+<script type="text/javascript">
+function noBack(){	window.history.forward();	}
+
+//전역 스크립트 변수 선언
+const serverName		= '{SERVER_NAME}';
+const getTime		= '{NOW}';
+const cacheVersion		= '{CACHE_VERSION}';
+const account		= {USER_DATA};
+const regist_message	= '{REGIST_MESSAGE}';
+if (!account || !account.firstChar) {
+	window.self.close();
+}
+const bank		= {BANK};
+</script>
+<body oncontextmenu="return false">
+	<div id="svg-container" style="display: none;"></div>
+	<div id="app">
+		<div class="wrap regist_wrap">
+			<header class="gift_header"><h1><span>계좌</span> 등록하기</h1></header>
+			<div class="scroll-wrapper container regist_container" style="position: relative;"></div>
+		</div>
+	</div>
+
+	<!-- popup -->
+	<div id="layer_alert" class="default" style="display:none;">
+		<div class="wrapper">
+			<div class="btn_close close">close</div>
+			<div class="header">알림</div>
+			<div class="conWrap"><div class="con"></div></div>
+			<div class="btn_modal"></div>
+		</div>
+	</div>
+	<div class="dimmed" style="display: none;">dimmed</div>
+
+	<!-- script -->
+	<script src="https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/js/bank.min.js?{CACHE_VERSION}"></script>
+</body>
+</html>
