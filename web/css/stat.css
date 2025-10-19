@@ -1,0 +1,908 @@
+@charset "UTF-8";
+
+:root {
+    --ncui-gray002: rgba(34, 34, 34, 0.02);
+    --ncui-gray002-hex: #FBFBFB;
+    --ncui-gray004: rgba(34, 34, 34, 0.04);
+    --ncui-gray004-hex: #F6F6F6;
+    --ncui-gray008: rgba(34, 34, 34, 0.08);
+    --ncui-gray008-hex: #EEEEEE;
+    --ncui-gray010: rgba(34, 34, 34, 0.1);
+    --ncui-gray010-hex: #E8E8E8;
+    --ncui-gray012: rgba(34, 34, 34, 0.12);
+    --ncui-gray012-hex: #E4E4E4;
+    --ncui-gray016: rgba(34, 34, 34, 0.16);
+    --ncui-gray016-hex: #DBDBDB;
+    --ncui-gray020: rgba(34, 34, 34, 0.2);
+    --ncui-gray020-hex: #D3D3D3;
+    --ncui-gray040: rgba(34, 34, 34, 0.4);
+    --ncui-gray040-hex: #A7A7A7;
+    --ncui-black045: rgba(0, 0, 0, 0.45);
+    --ncui-black068: rgba(0, 0, 0, 0.68);
+    --ncui-black093: rgba(0, 0, 0, 0.93);
+    --ncui-black100: #000000;
+    --ncui-white100: #FFFFFF;
+    --ncui-ui-white: #FFFFFF;
+    --ncui-ui-black: #000000;
+    --ncui-bg: #FFFFFF;
+    --ncui-error: #DC4141;
+    --ncui-bookmark: #FFD042;
+    --ncui-sucess: #1EB22E;
+    --ncui-button-normal: #333333;
+    --ncui-button-hover: #000000;
+    --ncui-linebutton-noraml: rgba(34, 34, 34, 0.12);
+}
+
+html {
+    --ncui-point: #C38B61;
+    --ncui-point040: rgba(195, 139, 97, 0.4);
+    --ncui-point-hover: #B07D57;
+    --ncui-point-text: #C38B61;
+    --ncui-point-text080: rgba(195, 139, 97, 0.8);
+    --ncui-point-download1: #C69C7C;
+    --ncui-point-download2: #9C8B7F;
+    --ncui-point-download3: #B5BDCA;
+}
+
+button, input, optgroup, select, textarea {
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+}
+
+b, optgroup, strong {
+    font-weight: 400;
+}
+
+button, input, select, textarea {
+    font-family: inherit;
+    margin: 0;
+}
+
+input[type=number] {
+      -moz-appearance: textfield;
+}
+input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+}
+
+.container {
+    color: var(--ncui-black100);
+    line-height: 1.4;
+}
+
+.wrap-contents {
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.wrap-simulator {
+    position: relative;
+    min-height: 700px;
+}
+
+.simulator-select {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background: #fff;
+    z-index: 2;
+}
+
+.simulator-select .wrap-button .button.selected, .simulator-select .wrap-button .wrap-simulator-body>section>.char .button.btn-levelup.on, .simulator-select .wrap-button .wrap-simulator-body>section>.char .button.btn-totalstat, .simulator-storage .loginbox .wrap-button .button.selected, .simulator-storage .loginbox .wrap-button .wrap-simulator-body>section>.char .button.btn-levelup.on, .simulator-storage .loginbox .wrap-button .wrap-simulator-body>section>.char .button.btn-totalstat, .wrap-simulator-body>section>.char .simulator-select .wrap-button .button.btn-levelup.on, .wrap-simulator-body>section>.char .simulator-select .wrap-button .button.btn-totalstat, .wrap-simulator-body>section>.char .simulator-storage .loginbox .wrap-button .button.btn-levelup.on, .wrap-simulator-body>section>.char .simulator-storage .loginbox .wrap-button .button.btn-totalstat, .wrap-simulator-body>section>.char .wrap-button .button.btn-levelup.on, .wrap-simulator-body>section>.char .wrap-button .button.btn-totalstat, .wrap-simulator-body>section>.char .wrap-button .button.selected, .wrap-simulator-body>section>.char body.ingame .modal-confirm .contents footer.wrap-button .button.btn-levelup.on, .wrap-simulator-body>section>.char body.ingame .modal-confirm .contents footer.wrap-button .button.btn-totalstat, body.ingame .modal-confirm .contents footer.wrap-button .button.selected, body.ingame .modal-confirm .contents footer.wrap-button .wrap-simulator-body>section>.char .button.btn-levelup.on, body.ingame .modal-confirm .contents footer.wrap-button .wrap-simulator-body>section>.char .button.btn-totalstat {
+    color: var(--ncui-point-text);
+    border: 1px solid #c69c7c;
+}
+
+.simulator-select header {
+    margin: 0 16px;
+    padding-top: 20px;
+}
+
+.simulator-select header em {
+    display: block;
+    font-size: 11px;
+    color: var(--ncui-point-text);
+}
+
+.simulator-select header strong {
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    color: #1f1f1f;
+}
+
+.simulator-select.simulator-select-class article {
+    padding: 20px 16px 14px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.simulator-select.simulator-select-class article ul li {
+    position: relative;
+    float: left;
+    width: calc(100% * .25);
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.simulator-select.simulator-select-class article ul li::before {
+    content: '';
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.simulator-select.simulator-select-class article ul li:nth-child(1)::before {
+    content: '';
+    background-size: 100% 100% !important;
+    background: url(https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/img/char/char0_m.png) no-repeat;
+}
+.simulator-select.simulator-select-class article ul li:nth-child(2)::before {
+    content: '';
+    background-size: 100% 100% !important;
+    background: url(https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/img/char/char1_m.png) no-repeat;
+}
+.simulator-select.simulator-select-class article ul li:nth-child(3)::before {
+    content: '';
+    background-size: 100% 100% !important;
+    background: url(https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/img/char/char2_m.png) no-repeat;
+}
+.simulator-select.simulator-select-class article ul li:nth-child(4)::before {
+    content: '';
+    background-size: 100% 100% !important;
+    background: url(https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/img/char/char3_m.png) no-repeat;
+}
+.simulator-select.simulator-select-class article ul li:nth-child(5)::before {
+    content: '';
+    background-size: 100% 100% !important;
+    background: url(https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/img/char/char4_m.png) no-repeat;
+}
+.simulator-select.simulator-select-class article ul li:nth-child(6)::before {
+    content: '';
+    background-size: 100% 100% !important;
+    background: url(https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/img/char/char5_m.png) no-repeat;
+}
+.simulator-select.simulator-select-class article ul li:nth-child(7)::before {
+    content: '';
+    background-size: 100% 100% !important;
+    background: url(https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/img/char/char6_m.png) no-repeat;
+}
+.simulator-select.simulator-select-class article ul li:nth-child(8)::before {
+    content: '';
+    background-size: 100% 100% !important;
+    background: url(https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/img/char/char7_m.png) no-repeat;
+}
+.simulator-select.simulator-select-class article ul li:nth-child(9)::before {
+    content: '';
+    background-size: 100% 100% !important;
+    background: url(https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/img/char/char8_m.png) no-repeat;
+}
+.simulator-select.simulator-select-class article ul li:nth-child(10)::before {
+    content: '';
+    background-size: 100% 100% !important;
+    background: url(https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/img/char/char9_m.png) no-repeat;
+}
+.simulator-select.simulator-select-class article ul li:nth-child(11)::before {
+    content: '';
+    background-size: 100% 100% !important;
+    background: url(https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/img/char/char10_m.png) no-repeat;
+}
+.simulator-select.simulator-select-class article ul li:nth-child(12)::before {
+    content: '';
+    background-size: 100% 100% !important;
+    background: url(https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/img/char/char11_m.png) no-repeat;
+}
+
+.simulator-select.simulator-select-class article ul li.is-selected::after {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    content: '';
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    margin-left: -30px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: rgba(195, 139, 97, .7);
+}
+
+.simulator-select.simulator-select-class article ul li.is-selected label::after {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 21px;
+    margin: 14px 0 0 -6px;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    border-color: #fff;
+    z-index: 1;
+}
+
+.simulator-select.simulator-select-class article ul li label {
+    display: block;
+    width: 100%;
+    font-size: 12px;
+    color: #a2a8ba;
+}
+
+.simulator-select.simulator-select-class article ul li.is-selected label, .simulator-select.simulator-select-class article ul li:hover label {
+    color: #c38b61;
+}
+
+.simulator-select header.simulator-select-level-header {
+    border-top: 1px solid #efefef;
+}
+
+.simulator-select.simulator-select-class article.simulator-select-level-article {
+    padding-bottom: 20px;
+}
+
+.simulator-select.simulator-select-class article.simulator-select-level-article input[type=number] {
+    clear: both;
+    display: block;
+    width: 100%;
+    height: 44px;
+    padding: 9px 2px;
+    text-align: center;
+    border: 1px solid rgba(34, 34, 34, .12);
+}
+
+article.simulator-select-level-article input[type='number']::placeholder {
+font-size: 13px;
+line-height: 1.62;
+	color: rgba(0, 0, 0, 0.45);
+	text-align: center;
+}
+
+.simulator-select.simulator-select-class .simulator-select-level-button {
+    margin: 0 16px;
+    padding: 20px 0;
+    border-top: 1px solid #efefef;
+}
+
+.simulator-select.simulator-select-class .simulator-select-level-button .btn-submit {
+    clear: both;
+    display: block;
+    width: 100%;
+    height: 44px;
+    padding: 7px 0;
+    border-radius: 4px;
+    background-color: #c38b61;
+    color: #fff;
+    text-align: center;
+}
+.simulator-select footer {
+    width: 100%;
+    height: 50px;
+    background-color: #f4f5f7;
+}
+.simulator-select footer .btn-close {
+    border: 0;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+}
+
+.simulator-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    margin-bottom: 30px;
+    border-bottom: 5px solid #f4f5f7;
+}
+
+.simulator-header .btn-simulator {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex
+;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 25px;
+    margin: 0 auto;
+    font-size: 17px;
+    text-align: center;
+    color: var(--ncui-point-text);
+    cursor: default;
+}
+.simulator-header .btn-simulator::before {
+    content: '';
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    position: relative;
+    margin: 0 6px 0 0;
+    vertical-align: middle;
+    background-image: url(https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/img/stat/icon-set.png);
+    background-size: 25px 25px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.simulator-my .wrap-items::after, .simulator-select.simulator-select-class article ul::after, .simulator-storage .storage-bundle>article.storage__equip>.equip::after, .simulator-storage .storage-bundle>article.storage__stat .stat::after, .simulator-storage::after, .ui-slidetab .btns::after, section.simulator__stat>.char .hpmp ul::after, section.simulator__stat>.variation ul li::after, section.simulator__stat>.variation ul::after, section.simulator__stat>.variation::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.simulator-storage .loginbox, .slick-track::after {
+    clear: both;
+}
+
+.simulator-storage .loginbox p {
+    margin: 65px 0 20px;
+    font-size: 14px;
+    line-height: 1.43;
+    text-align: center;
+    color: var(--ncui-black093);
+}
+
+.simulator-select .wrap-button, .simulator-storage .loginbox .wrap-button, .wrap-simulator-body>section>.char .wrap-button {
+    text-align: center;
+}
+
+.simulator-storage .loginbox .wrap-button .button, .wrap-simulator-body>section>.char .wrap-button .button {
+    padding: 9px 15px;
+    color: var(--ncui-black045);
+    border: 1px solid #c7c7cc;
+    outline: 0;
+    border-radius: 100px;
+    text-decoration: none;
+    background-color: transparent;
+    font-size: 13px;
+}
+
+.simulator-select .wrap-button .button.primary, .simulator-storage .loginbox .wrap-button .button.primary, .wrap-simulator-body>section>.char .wrap-button .button.primary, body.ingame .modal-confirm .contents footer.wrap-button .button.primary {
+    color: #fff;
+    border-color: #c69c7c;
+    background: #c69c7c;
+}
+
+.loadingbar {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 100px;
+    text-align: center;
+    z-index: 1;
+}
+
+.page-statsetting .loadingbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.loadingbar::before {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -18px;
+    margin-top: -18px;
+    content: '';
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-image: url(https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/img/stat/loading.png);
+    background-size: contain;
+    background-color: transparent;
+}
+
+.btn-gift:hover, .layer-item-search .wrap-section-searchresult ul li[data-id], .simulator-header .btn-simulator.abled, [type=button], [type=reset], [type=submit], button {
+    cursor: pointer;
+}
+
+.simulator-select footer .btn-close::before, .simulator-storage .storage-bundle>article .btn-delete::before {
+    content: '';
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background-image: url(https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/img/stat/icon-close.png);
+    background-size: 14px 14px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.simulator__equip, .simulator__stat, .slick-dots li button:focus, .slick-dots li button:hover, .slick-list:focus, .wrap-simulator-body, button, input, textarea {
+    outline: 0;
+}
+
+.layer-item-search header, .wrap-simulator-body>section>.char, .wrap-simulator-body>section>header {
+    max-width: 1180px;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.layer-item-search header, .wrap-simulator-body>section>header {
+    height: 44px;
+    overflow: hidden;
+    border-bottom: 1px solid #efefef;
+}
+.layer-item-search header>*, .wrap-simulator-body>section>header>* {
+    display: inline-block;
+    vertical-align: middle;
+}
+.wrap-simulator-body>section>header .icon-back {
+    float: left;
+    width: 39px;
+    height: 44px;
+    margin-left: -10px;
+    cursor: pointer;
+}
+.wrap-simulator-body>section>header .icon-back::before {
+    content: '';
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/img/stat/icon-back.png);
+    background-size: 17px 15px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.layer-item-search header h3, .wrap-simulator-body>section>header h3 {
+    margin: 0 16px;
+    font-size: 16px;
+    color: #1f1f1f;
+    line-height: 44px;
+}
+.wrap-simulator-body>section>header .util, [dir=rtl] .slick-slide {
+    float: right;
+}
+.wrap-simulator-body>section>header .util button {
+    padding: 0;
+    line-height: 44px;
+    font-size: 13px;
+    color: var(--ncui-black045);
+}
+.wrap-simulator-body>section>header .util button:last-child {
+    margin-left: 3px;
+}
+.wrap-simulator-body>section>header .util button:last-child::before {
+    content: '';
+    display: inline-block;
+    width: 1px;
+    height: 13px;
+    margin: 0 7px 0 0;
+    vertical-align: middle;
+    border-left: 1px solid rgba(162, 168, 178, .41);
+}
+.wrap-simulator-body>section>.char {
+    position: relative;
+    text-align: center;
+    border-bottom: 1px solid #efefef;
+    padding-top: 21px;
+    padding-bottom: 20px;
+}
+section.simulator__stat>.char .base {
+    height: 70px;
+    text-align: left;
+}
+.simulator-storage .storage-bundle>article .char .thumb, .wrap-simulator-body>section>.char .thumb {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+section.simulator__stat>.char .thumb {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+section.simulator__stat>.char .level, section.simulator__stat>.char .level_target {
+    display: inline-block;
+    margin-top: 12px;
+    font-size: 18px;
+}
+
+section.simulator__stat>.char .level {
+    color: #ce610d;
+    font-weight: 400;
+}
+section.simulator__stat>.char .level_target {
+    font-weight: 400;
+    color: #a2a8ba;
+}
+section.simulator__stat>.char .level_target::before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width: 1px;
+    height: 18px;
+    margin: -3px 8px 0 6px;
+    -webkit-transform: rotate(24deg);
+    -ms-transform: rotate(24deg);
+    transform: rotate(24deg);
+    background-color: #d8d8d8;
+}
+section.simulator__stat>.char .level_target strong {
+    font-weight: 400;
+}
+
+.wrap-simulator-body>section>.char .button.btn-levelup, .wrap-simulator-body>section>.char .button.btn-totalstat {
+    position: absolute;
+    right: 16px;
+    top: 28px;
+    font-size: 13px;
+}
+
+.wrap-simulator-body>section>.char .wrap-button .tooltip-levelup {
+    display: block;
+    position: absolute;
+    right: 5px;
+    top: -11px;
+    width: 107px;
+    height: 39px;
+    background-image: url(https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/img/stat/tooltip-key.png);
+    background-size: 107px 39px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+section.simulator__stat>.char .point {
+    padding-bottom: 9px;
+}
+section.simulator__stat>.char .point>p {
+    display: inline-block;
+    font-size: 13px;
+}
+section.simulator__stat>.char .point>p var {
+    margin: 0 4px;
+}
+section.simulator__stat>.char .point>p.elixirPoint {
+    color: var(--ncui-black045);
+}
+section.simulator__stat>.char .hpmp {
+    border-top: 1px solid #eeeff4;
+    padding-top: 19px;
+    padding-bottom: 10px;
+}
+section.simulator__stat>.char .hpmp ul li {
+    float: left;
+    width: 100%;
+    margin-bottom: 6px;
+    font-size: 13px;
+}
+section.simulator__stat>.char .hpmp ul li .graph, section.simulator__stat>.char .hpmp ul li label, section.simulator__stat>.char .hpmp ul li var {
+    float: left;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+}
+section.simulator__stat>.char .hpmp ul li label {
+    width: 35px;
+    color: #1f1f1f;
+}
+section.simulator__stat>.char .hpmp ul li .graph {
+    width: calc(100% - 74px);
+}
+section.simulator__stat>.char .hpmp ul li .graph figure {
+    display: inline-block;
+    height: 11px;
+    vertical-align: middle;
+    border-radius: 100px;
+}
+section.simulator__stat>.char .hpmp ul li.hp .graph figure {
+    background-color: #ff8671;
+}
+section.simulator__stat>.char .hpmp ul li.mp .graph figure {
+    background-color: #8fc0fc;
+}
+section.simulator__stat>.char .hpmp ul li var {
+    width: 39px;
+    text-align: right;
+    color: var(--ncui-black093);
+}
+section.simulator__stat>.char .hpmp ul li.hp var {
+    color: #ff8671;
+}
+section.simulator__stat>.char .hpmp ul li.mp var {
+    color: #8fc0fc;
+}
+section.simulator__stat>.variation {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 36px 16px 0;
+    background-color: #edf0f4;
+    font-size: 16px;
+}
+section.simulator__stat>.variation dl dt {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #c7c7cc;
+}
+section.simulator__stat>.variation dl dt .util {
+    float: right;
+}
+section.simulator__stat>.variation dl dt .util button {
+    width: 22px;
+    height: 22px;
+    text-align: left;
+    text-indent: -9999em;
+    white-space: nowrap;
+    overflow: hidden;
+}
+section.simulator__stat>.variation dl dt .util button.down {
+    background-image: url(https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/img/stat/icon-down-on.png);
+    background-size: 22px 22px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+section.simulator__stat>.variation dl dt .util button.down:disabled {
+    background-image: url(https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/img/stat/icon-down-off.png);
+    background-size: 22px 22px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+section.simulator__stat>.variation dl dt var {
+    margin: 0 11px;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--ncui-black045);
+}
+section.simulator__stat>.variation dl dt .util button.up {
+    background-image: url(https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/img/stat/icon-up-on.png);
+    background-size: 22px 22px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+section.simulator__stat>.variation dl dt .util button.up:disabled {
+    background-image: url(https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/img/stat/icon-up-off.png);
+    background-size: 22px 22px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+section.simulator__stat>.variation dl dd {
+    padding-top: 9px;
+    padding-bottom: 37px;
+}
+
+section.simulator__stat>.variation ul {
+    clear: both;
+}
+
+section.simulator__stat>.variation ul li {
+    margin-bottom: 0;
+}
+
+section.simulator__stat>.variation ul li label {
+    float: left;
+    font-size: 13px;
+    line-height: 1.7;
+    color: #1f1f1f;
+}
+section.simulator__stat>.variation ul li var {
+    float: right;
+    font-size: 13px;
+    line-height: 1.7;
+    color: #262626;
+}
+
+section.simulator__stat>.variation ul li.em1 var {
+    color: #f98835;
+}
+
+section.simulator__stat>footer {
+    padding-top: 30px;
+    font-size: 13px;
+    color: var(--ncui-black045);
+}
+section.simulator__stat>footer p::before {
+    content: "-";
+    display: inline-block;
+    color: var(--ncui-black045);
+    font-size: 12px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+@media (min-width: 640px) {
+    .simulator-storage {
+        padding: 0 16px;
+    }
+    .simulator-storage .loginbox p br {
+        display: none;
+    }
+    .layer-item-search header, .wrap-simulator-body>section>header {
+        text-align: center;
+        border-bottom: 0;
+    }
+    section.simulator__stat>.char.char__stat {
+        padding-top: 0;
+    }
+    section.simulator__stat>.char.char__stat .base {
+        height: 77px;
+        max-width: 200px;
+        margin: 0 auto;
+        padding: 0;
+    }
+    section.simulator__stat>.char.char__stat .base .thumb {
+        width: 60px;
+        height: 60px;
+    }
+    section.simulator__stat>.char.char__stat .base .level {
+        margin-top: 17px;
+    }
+    section.simulator__stat>.char.char__stat .wrap-button {
+        width: 360px;
+        margin: auto;
+        position: relative;
+    }
+    section.simulator__stat>.char.char__stat .wrap-button .button {
+        top: -8px;
+        right: 0;
+    }
+    section.simulator__stat>.char.char__stat .wrap-button .tooltip-levelup {
+        right: -96px;
+        top: -4px;
+        width: 95px;
+        height: 28px;
+        background-image: url(https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/img/stat/tooltip-key-pc.png);
+        background-size: 95px 28px;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    section.simulator__stat>.char.char__stat .point {
+        padding-bottom: 20px;
+        margin: 0 auto;
+    }
+    section.simulator__stat>.char.char__stat .point p {
+        font-size: 14px;
+    }
+    section.simulator__stat>.char.char__stat .point p.elixirPoint {
+        padding-right: 90px;
+    }
+    section.simulator__stat>.char.char__stat ul {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    section.simulator__stat>.char .hpmp ul li {
+        width: calc(100% * .5 - 31px * (1 - .5));
+        margin-left: 31px;
+    }
+    section.simulator__stat>.char .hpmp ul li:nth-child(odd) {
+        margin-left: 0;
+    }
+    section.simulator__stat>.variation dl {
+        height: 189px;
+        float: left;
+        clear: none;
+        width: calc(100% * .5 - 57px * (1 - .5));
+        margin-left: 57px;
+    }
+    section.simulator__stat>.variation dl:nth-child(odd) {
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 960px) {
+    .container {
+        line-height: 1.5;
+    }
+    .wrap-simulator {
+        margin-top: 0;
+    }
+    .simulator-select {
+        border: 5px solid #f4f5f7;
+    }
+    .simulator-select header {
+        border-bottom: 0;
+        padding-top: 40px;
+        padding-bottom: 29px;
+    }
+    .simulator-select header em {
+        font-size: 13px;
+    }
+    .simulator-select header strong {
+        font-size: 18px;
+    }
+    .simulator-select.simulator-select-class article ul li {
+        width: calc(100% * .16667);
+    }
+    .simulator-select header.simulator-select-level-header {
+        padding-top: 30px;
+        padding-bottom: 0;
+    }
+    .simulator-select.simulator-select-class article.simulator-select-level-article input[type=number] {
+        clear: none;
+        display: inline-block;
+        width: 360px;
+        height: 36px;
+    }
+    .simulator-select.simulator-select-class .simulator-select-level-button .btn-submit {
+        clear: none;
+        display: inline-block;
+        width: 96px;
+        height: 36px;
+    }
+    .simulator-select footer {
+        width: auto;
+        height: auto;
+        background-color: transparent;
+    }
+    .simulator-select button.btn-close {
+        position: absolute;
+        right: 8px;
+        top: 8px;
+        width: 28px;
+        height: 28px;
+    }
+    .simulator-header {
+        height: 75px;
+        background-color: #f4f5f7;
+    }
+    .simulator-storage {
+        padding: 0;
+    }
+    .simulator-storage .loginbox .wrap-button .button, .wrap-simulator-body>section>.char .wrap-button .button {
+        padding-top: 7px;
+        font-size: 16px;
+    }
+    .wrap-simulator-body {
+        margin-top: -15px;
+    }
+    .layer-item-search header, .wrap-simulator-body>section>.char, .wrap-simulator-body>section>header {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    section.simulator__stat>.char .level, section.simulator__stat>.char .level_target {
+        font-size: 17px;
+    }
+    section.simulator__stat>.variation {
+        padding-top: 24px;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    section.simulator__stat>.variation dl {
+        height: 229px;
+        width: calc(100% * .33333 - 54px * (1 - .33333));
+        margin-left: 54px;
+    }
+    section.simulator__stat>.variation dl:nth-child(odd) {
+        margin-left: 54px;
+    }
+    section.simulator__stat>.variation dl:nth-child(1), section.simulator__stat>.variation dl:nth-child(4) {
+        margin-left: 0;
+    }
+    section.simulator__stat>.variation dl.stat-CON {
+        height: 260px;
+    }
+}
+
+@media (min-width: 1260px) {
+    .simulator-select.simulator-select-class article ul li {
+        width: calc(100% * .08333);
+    }
+    .layer-item-search header, .wrap-simulator-body>section>.char, .wrap-simulator-body>section>header {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
