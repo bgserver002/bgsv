@@ -25,10 +25,10 @@
 #app .charge-name .static .wrapper, #app .charge-value .static .wrapper {position: relative;}
 #app .charge-name .static .wrapper button, #app .charge-value .static .wrapper button {position: absolute; right: 10px; top: 19px; display: none; font-size: 0; background: none; border: 0; width: 19px; height: 19px;}
 #app .charge-value .static .wrapper .show-unit {position: absolute; top: 13px; font-size: 20px;}
-#app .charge-name .static .wrapper button:before, #app .charge-value .static .wrapper button:before {content: ''; background-image: url(https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/img/charge/sprite.png); background-repeat: no-repeat; background-size: 230px 202px; background-position: -135px -180px; width: 17px; height: 17px; font-size: 0; display: block;}
+#app .charge-name .static .wrapper button:before, #app .charge-value .static .wrapper button:before {content: ''; background-image: url(/img/charge/sprite.png); background-repeat: no-repeat; background-size: 230px 202px; background-position: -135px -180px; width: 17px; height: 17px; font-size: 0; display: block;}
 #app .charge-name .static .wrapper input, #app .charge-value .static .wrapper input {text-indent: 44px; height: 54px; border-bottom: 1px solid #1f326338; font-size: 20px;}
-#app .charge-name .static .wrapper input {background: url(https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/img/29001.png) no-repeat left center; background-size: 24px 24px; background-position: 15px 15px;}
-#app .charge-value .static .wrapper input {background: url(https://cdn.jsdelivr.net/gh/bgserver002/bgsv@main/web/img/icon-won.png) no-repeat left center; background-size: 24px 24px; background-position: 15px 15px;}
+#app .charge-name .static .wrapper input {background: url(/img/29001.png) no-repeat left center; background-size: 24px 24px; background-position: 15px 15px;}
+#app .charge-value .static .wrapper input {background: url(/img/icon-won.png) no-repeat left center; background-size: 24px 24px; background-position: 15px 15px;}
 #order_list_btn {position: fixed; top: 57px; right: 42px; background: #ff6502; color: #fff; padding: 7px 11px; border-radius: 5px;}
 #order_list_container {position: absolute; top: 0; background: #fff; width: 100%; padding-top: 48px;}
 #order_list_container h1 {text-align: center; position: fixed; width: 100%; background: #fff; border-bottom: 1px solid #1f3263; height: 48px; color: #ff6502; line-height: 45px; font-weight: 600;}
@@ -55,7 +55,12 @@
 #app .regist_wrap .container .order_init {padding-top: 10px; color: #273c73;}
 #app .regist_wrap .container .order_init span {font-size: 14px; font-weight: 600; -webkit-animation: blink 2.5s linear infinite;}
 #app .regist_wrap .container .order_init .order_init_cancel_btn {float: right; background: #ff6502; padding: 4px 13px; color: #fff; border-radius: 5px;}
-
+/* payaction - 클릭 가로채는 오버레이 방지 */
+#app .content-mouse,
+#app .regist_wrap .content-mouse,
+.content-mouse {
+	pointer-events: none !important;
+}
 
 @media (min-width: 480px) {
     #app .agree_btns {left: 40px; right: 40px;}
