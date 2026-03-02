@@ -55,12 +55,7 @@
 #app .regist_wrap .container .order_init {padding-top: 10px; color: #273c73;}
 #app .regist_wrap .container .order_init span {font-size: 14px; font-weight: 600; -webkit-animation: blink 2.5s linear infinite;}
 #app .regist_wrap .container .order_init .order_init_cancel_btn {float: right; background: #ff6502; padding: 4px 13px; color: #fff; border-radius: 5px;}
-/* payaction - 클릭 가로채는 오버레이 방지 */
-#app .content-mouse,
-#app .regist_wrap .content-mouse,
-.content-mouse {
-	pointer-events: none !important;
-}
+
 
 @media (min-width: 480px) {
     #app .agree_btns {left: 40px; right: 40px;}
